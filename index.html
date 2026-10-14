@@ -9,26 +9,203 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.1.0/build/pure-min.css" integrity="sha384-kj0X2NG2KHBie8Tq8fH1kxnyWM9XsXQpq7XdwbKmFKjwwaXGKBlB2Klu3VOltSFx" crossorigin="anonymous">
 </head>
 <body>
-    <div class="pure-g">
-        <div class="pure-u-1-3"><p>Thirds</p></div>
-        <div class="pure-u-1-3"><p>Thirds</p></div>
-        <div class="pure-u-1-3"><p>Thirds</p></div>
+  <div class="pure-g">
+    <div class="pure-u-1-3"><p>Thirds</p></div>
+    <div class="pure-u-1-3">
+      <div id="vis"></div>
     </div>
-  <div id="vis"></div>
+    <div class="pure-u-1-3"><p>Hello there</p></div>
+  </div>
 
   <script>
-    const spec = {
-      $schema: "https://vega.github.io/schema/vega-lite/v5.json",
-      description: "A simple bar chart",
-      data: {url: "data.json", format: { type: "json" }},
-      mark: "bar",
-      encoding: {
-        x: { field: "category", type: "nominal" },
-        y: { field: "value", type: "quantitative" }
-      }
-    };
+    fetch("wfh_long.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const blueSeriesBefore = data
+          .filter((d) =>
+            d.date >= "2000-01-01" &&
+            d.measure === "Worked from home" &&
+            d.date <= "2019-08-01"
+          )
+          .sort((a, b) => new Date(a.date) - new Date(b.date));
 
-    vegaEmbed("#vis", spec);
+        const blueSeriesAfter = data
+          .filter((d) =>
+            d.date >= "2000-01-01" &&
+            d.measure === "Worked from home" &&
+            d.date >= "2021-08-01"
+          )
+          .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+        const estimateSeries = data
+          .filter((d) => d.date >= "2000-01-01" && (d.measure === "Lower estimate" || d.measure === "Upper estimate"))
+          .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+        const connectorPairs = [
+          [
+            { date: "2019-08-01", value: 32.1, measure: "Worked from home" },
+            { date: "2020-04-01", value: 39.0, measure: "Lower estimate" }
+          ],
+          [
+            { date: "2019-08-01", value: 32.1, measure: "Worked from home" },
+            { date: "2020-04-01", value: 53.0, measure: "Upper estimate" }
+          ],
+          [
+            { date: "2021-06-01", value: 33.5, measure: "Lower estimate" },
+            { date: "2021-08-01", value: 40.5, measure: "Worked from home" }
+          ],
+          [
+            { date: "2021-06-01", value: 41.3, measure: "Upper estimate" },
+            { date: "2021-08-01", value: 40.5, measure: "Worked from home" }
+          ]
+        ];
+
+        const connectorLayers = connectorPairs.map((pair) => ({
+          data: { values: pair },
+          mark: {
+            type: "line",
+            stroke: pair.some((d) => d.measure === "Lower estimate") ? "#2ca02c" : "#d62728",
+            strokeWidth: 2.5,
+            opacity: 0.9,
+            strokeDash: [8, 6]
+          },
+          encoding: {
+            x: {
+              field: "date",
+              type: "temporal",
+              axis: {
+                title: "Year",
+                format: "%Y"
+              }
+            },
+            y: {
+              field: "value",
+              type: "quantitative",
+              axis: {
+                title: "% of employed people",
+                format: ".0f"
+              }
+            },
+            order: { field: "date", type: "temporal" }
+          }
+        }));
+
+        const spec = {
+          $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+          description: "Share of employed people working from home over time, with lower and upper estimates shown separately where available.",
+          width: 950,
+          height: 500,
+          title: {
+            text: "Worked from home over time",
+            fontSize: 18,
+            anchor: "start",
+            dx: 20,
+            dy: -10
+          },
+          layer: [
+            ...connectorLayers,
+            {
+              data: { values: blueSeriesBefore },
+              mark: { type: "line", point: true, strokeWidth: 2.5, color: "#1f77b4" },
+              encoding: {
+                x: {
+                  field: "date",
+                  type: "temporal",
+                  axis: {
+                    title: "Year",
+                    format: "%Y"
+                  }
+                },
+                y: {
+                  field: "value",
+                  type: "quantitative",
+                  axis: {
+                    title: "% of employed people",
+                    format: ".0f"
+                  }
+                },
+                tooltip: [
+                  { field: "measure", type: "nominal", title: "Measure" },
+                  { field: "year", type: "quantitative", title: "Year" },
+                  { field: "value", type: "quantitative", title: "%", format: ".1f" },
+                  { field: "period", type: "nominal", title: "Period" }
+                ]
+              }
+            },
+            {
+              data: { values: blueSeriesAfter },
+              mark: { type: "line", point: true, strokeWidth: 2.5, color: "#1f77b4" },
+              encoding: {
+                x: {
+                  field: "date",
+                  type: "temporal",
+                  axis: {
+                    title: "Year",
+                    format: "%Y"
+                  }
+                },
+                y: {
+                  field: "value",
+                  type: "quantitative",
+                  axis: {
+                    title: "% of employed people",
+                    format: ".0f"
+                  }
+                },
+                tooltip: [
+                  { field: "measure", type: "nominal", title: "Measure" },
+                  { field: "year", type: "quantitative", title: "Year" },
+                  { field: "value", type: "quantitative", title: "%", format: ".1f" },
+                  { field: "period", type: "nominal", title: "Period" }
+                ]
+              }
+            },
+            {
+              data: { values: estimateSeries },
+              mark: { type: "line", point: true, strokeWidth: 2.5 },
+              encoding: {
+                x: {
+                  field: "date",
+                  type: "temporal",
+                  axis: {
+                    title: "Year",
+                    format: "%Y"
+                  }
+                },
+                y: {
+                  field: "value",
+                  type: "quantitative",
+                  axis: {
+                    title: "% of employed people",
+                    format: ".0f"
+                  }
+                },
+                color: {
+                  field: "measure",
+                  type: "nominal",
+                  title: "Measure",
+                  scale: {
+                    domain: ["Lower estimate", "Upper estimate"],
+                    range: ["#2ca02c", "#d62728"]
+                  },
+                  legend: { orient: "top", direction: "horizontal", columns: 2 }
+                },
+                tooltip: [
+                  { field: "measure", type: "nominal", title: "Measure" },
+                  { field: "year", type: "quantitative", title: "Year" },
+                  { field: "value", type: "quantitative", title: "%", format: ".1f" },
+                  { field: "period", type: "nominal", title: "Period" }
+                ]
+              }
+            }
+          ]
+        };
+
+        vegaEmbed("#vis", spec);
+      })
+      .catch((error) => {
+        console.error("Unable to load WFH data:", error);
+      });
   </script>
 </body>
 </html>

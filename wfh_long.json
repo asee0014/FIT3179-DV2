@@ -1,0 +1,353 @@
+[
+ {
+  "period":"1970-May (a)",
+  "date":"1970-05-01",
+  "year":1970,
+  "survey":"a",
+  "survey_name":"Journey to Work and Journey to School (worked from home last week)",
+  "measure":"Worked from home",
+  "value":15.5
+ },
+ {
+  "period":"1974-Aug (a)",
+  "date":"1974-08-01",
+  "year":1974,
+  "survey":"a",
+  "survey_name":"Journey to Work and Journey to School (worked from home last week)",
+  "measure":"Worked from home",
+  "value":12.4
+ },
+ {
+  "period":"1989-Apr (b)",
+  "date":"1989-04-01",
+  "year":1989,
+  "survey":"b",
+  "survey_name":"Persons Employed at Home (worked from home last week)",
+  "measure":"Most of the time",
+  "value":3.5
+ },
+ {
+  "period":"1989-Apr (b)",
+  "date":"1989-04-01",
+  "year":1989,
+  "survey":"b",
+  "survey_name":"Persons Employed at Home (worked from home last week)",
+  "measure":"Worked from home",
+  "value":22.8
+ },
+ {
+  "period":"1992-Mar (b)",
+  "date":"1992-03-01",
+  "year":1992,
+  "survey":"b",
+  "survey_name":"Persons Employed at Home (worked from home last week)",
+  "measure":"Most of the time",
+  "value":4.0
+ },
+ {
+  "period":"1992-Mar (b)",
+  "date":"1992-03-01",
+  "year":1992,
+  "survey":"b",
+  "survey_name":"Persons Employed at Home (worked from home last week)",
+  "measure":"Worked from home",
+  "value":26.4
+ },
+ {
+  "period":"1995-Sep (b)",
+  "date":"1995-09-01",
+  "year":1995,
+  "survey":"b",
+  "survey_name":"Persons Employed at Home (worked from home last week)",
+  "measure":"Most of the time",
+  "value":4.1
+ },
+ {
+  "period":"1995-Sep (b)",
+  "date":"1995-09-01",
+  "year":1995,
+  "survey":"b",
+  "survey_name":"Persons Employed at Home (worked from home last week)",
+  "measure":"Worked from home",
+  "value":25.8
+ },
+ {
+  "period":"2000-Apr-Jun (c)",
+  "date":"2000-04-01",
+  "year":2000,
+  "survey":"c",
+  "survey_name":"Employment Arrangements, Retirement and Superannuation (usually works from home)",
+  "measure":"Most of the time",
+  "value":4.4
+ },
+ {
+  "period":"2000-Apr-Jun (c)",
+  "date":"2000-04-01",
+  "year":2000,
+  "survey":"c",
+  "survey_name":"Employment Arrangements, Retirement and Superannuation (usually works from home)",
+  "measure":"Worked from home",
+  "value":30.8
+ },
+ {
+  "period":"2000-Jun (d)",
+  "date":"2000-06-01",
+  "year":2000,
+  "survey":"d",
+  "survey_name":"Locations of Work (worked from home last week)",
+  "measure":"Most of the time",
+  "value":8.1
+ },
+ {
+  "period":"2000-Jun (d)",
+  "date":"2000-06-01",
+  "year":2000,
+  "survey":"d",
+  "survey_name":"Locations of Work (worked from home last week)",
+  "measure":"Worked from home",
+  "value":20.9
+ },
+ {
+  "period":"2005-Nov (d)",
+  "date":"2005-11-01",
+  "year":2005,
+  "survey":"d",
+  "survey_name":"Locations of Work (worked from home last week)",
+  "measure":"Most of the time",
+  "value":7.7
+ },
+ {
+  "period":"2005-Nov (d)",
+  "date":"2005-11-01",
+  "year":2005,
+  "survey":"d",
+  "survey_name":"Locations of Work (worked from home last week)",
+  "measure":"Worked from home",
+  "value":24.7
+ },
+ {
+  "period":"2007-Apr-Jul (c)",
+  "date":"2007-04-01",
+  "year":2007,
+  "survey":"c",
+  "survey_name":"Employment Arrangements, Retirement and Superannuation (usually works from home)",
+  "measure":"Most of the time",
+  "value":5.7
+ },
+ {
+  "period":"2007-Apr-Jul (c)",
+  "date":"2007-04-01",
+  "year":2007,
+  "survey":"c",
+  "survey_name":"Employment Arrangements, Retirement and Superannuation (usually works from home)",
+  "measure":"Worked from home",
+  "value":30.7
+ },
+ {
+  "period":"2008-Nov (d)",
+  "date":"2008-11-01",
+  "year":2008,
+  "survey":"d",
+  "survey_name":"Locations of Work (worked from home last week)",
+  "measure":"Most of the time",
+  "value":7.6
+ },
+ {
+  "period":"2008-Nov (d)",
+  "date":"2008-11-01",
+  "year":2008,
+  "survey":"d",
+  "survey_name":"Locations of Work (worked from home last week)",
+  "measure":"Worked from home",
+  "value":23.8
+ },
+ {
+  "period":"2015-Aug (e)",
+  "date":"2015-08-01",
+  "year":2015,
+  "survey":"e",
+  "survey_name":"Characteristics of Employment (usually works from home)",
+  "measure":"Worked from home",
+  "value":29.8
+ },
+ {
+  "period":"2017-Aug (e)",
+  "date":"2017-08-01",
+  "year":2017,
+  "survey":"e",
+  "survey_name":"Characteristics of Employment (usually works from home)",
+  "measure":"Worked from home",
+  "value":30.9
+ },
+ {
+  "period":"2019-Aug (e)",
+  "date":"2019-08-01",
+  "year":2019,
+  "survey":"e",
+  "survey_name":"Characteristics of Employment (usually works from home)",
+  "measure":"Worked from home",
+  "value":32.1
+ },
+ {
+  "period":"2020-Apr (f)",
+  "date":"2020-04-01",
+  "year":2020,
+  "survey":"f",
+  "survey_name":"Household Impacts of COVID-19 (worked from home in last four weeks)",
+  "measure":"Lower estimate",
+  "value":39.0
+ },
+ {
+  "period":"2020-Apr (f)",
+  "date":"2020-04-01",
+  "year":2020,
+  "survey":"f",
+  "survey_name":"Household Impacts of COVID-19 (worked from home in last four weeks)",
+  "measure":"Upper estimate",
+  "value":53.0
+ },
+ {
+  "period":"2020-Sep (f)",
+  "date":"2020-09-01",
+  "year":2020,
+  "survey":"f",
+  "survey_name":"Household Impacts of COVID-19 (worked from home in last four weeks)",
+  "measure":"Lower estimate",
+  "value":35.9
+ },
+ {
+  "period":"2020-Sep (f)",
+  "date":"2020-09-01",
+  "year":2020,
+  "survey":"f",
+  "survey_name":"Household Impacts of COVID-19 (worked from home in last four weeks)",
+  "measure":"Most of the time",
+  "value":30.7
+ },
+ {
+  "period":"2020-Sep (f)",
+  "date":"2020-09-01",
+  "year":2020,
+  "survey":"f",
+  "survey_name":"Household Impacts of COVID-19 (worked from home in last four weeks)",
+  "measure":"Upper estimate",
+  "value":44.1
+ },
+ {
+  "period":"2020-Dec (f)",
+  "date":"2020-12-01",
+  "year":2020,
+  "survey":"f",
+  "survey_name":"Household Impacts of COVID-19 (worked from home in last four weeks)",
+  "measure":"Lower estimate",
+  "value":35.8
+ },
+ {
+  "period":"2020-Dec (f)",
+  "date":"2020-12-01",
+  "year":2020,
+  "survey":"f",
+  "survey_name":"Household Impacts of COVID-19 (worked from home in last four weeks)",
+  "measure":"Most of the time",
+  "value":27.4
+ },
+ {
+  "period":"2020-Dec (f)",
+  "date":"2020-12-01",
+  "year":2020,
+  "survey":"f",
+  "survey_name":"Household Impacts of COVID-19 (worked from home in last four weeks)",
+  "measure":"Upper estimate",
+  "value":42.6
+ },
+ {
+  "period":"2021-Feb (f)",
+  "date":"2021-02-01",
+  "year":2021,
+  "survey":"f",
+  "survey_name":"Household Impacts of COVID-19 (worked from home in last four weeks)",
+  "measure":"Lower estimate",
+  "value":37.4
+ },
+ {
+  "period":"2021-Feb (f)",
+  "date":"2021-02-01",
+  "year":2021,
+  "survey":"f",
+  "survey_name":"Household Impacts of COVID-19 (worked from home in last four weeks)",
+  "measure":"Most of the time",
+  "value":25.9
+ },
+ {
+  "period":"2021-Feb (f)",
+  "date":"2021-02-01",
+  "year":2021,
+  "survey":"f",
+  "survey_name":"Household Impacts of COVID-19 (worked from home in last four weeks)",
+  "measure":"Upper estimate",
+  "value":44.4
+ },
+ {
+  "period":"2021-Jun (f)",
+  "date":"2021-06-01",
+  "year":2021,
+  "survey":"f",
+  "survey_name":"Household Impacts of COVID-19 (worked from home in last four weeks)",
+  "measure":"Lower estimate",
+  "value":33.5
+ },
+ {
+  "period":"2021-Jun (f)",
+  "date":"2021-06-01",
+  "year":2021,
+  "survey":"f",
+  "survey_name":"Household Impacts of COVID-19 (worked from home in last four weeks)",
+  "measure":"Most of the time",
+  "value":23.9
+ },
+ {
+  "period":"2021-Jun (f)",
+  "date":"2021-06-01",
+  "year":2021,
+  "survey":"f",
+  "survey_name":"Household Impacts of COVID-19 (worked from home in last four weeks)",
+  "measure":"Upper estimate",
+  "value":41.3
+ },
+ {
+  "period":"2021-Aug (e)",
+  "date":"2021-08-01",
+  "year":2021,
+  "survey":"e",
+  "survey_name":"Characteristics of Employment (usually works from home)",
+  "measure":"Worked from home",
+  "value":40.5
+ },
+ {
+  "period":"2023 - Aug (e)",
+  "date":"2023-08-01",
+  "year":2023,
+  "survey":"e",
+  "survey_name":"Characteristics of Employment (usually works from home)",
+  "measure":"Worked from home",
+  "value":37.3
+ },
+ {
+  "period":"2024 - Aug (e)",
+  "date":"2024-08-01",
+  "year":2024,
+  "survey":"e",
+  "survey_name":"Characteristics of Employment (usually works from home)",
+  "measure":"Worked from home",
+  "value":36.3
+ },
+ {
+  "period":"2025 - Aug (e)",
+  "date":"2025-08-01",
+  "year":2025,
+  "survey":"e",
+  "survey_name":"Characteristics of Employment (usually works from home)",
+  "measure":"Worked from home",
+  "value":36.2
+ }
+]
