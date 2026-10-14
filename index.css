@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.pure-g {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pure-u-1-2 {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #ddd;
+  min-height: 420px;
+  vertical-align: top;
+}
+
+.text-panel {
+  padding: 24px 20px;
+  line-height: 1.6;
+}
+
+.chart-panel {
+  width: 100%;
+  display: block;
+  min-height: 320px;
+}
+
+#vis,
+#vis-most {
+  width: 100%;
+  display: block;
+}
