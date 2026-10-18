@@ -1,0 +1,86 @@
+[
+ {
+  "location": "Regional Queensland",
+  "order": 0,
+  "response": "Work from home",
+  "percent": 40
+ },
+ {
+  "location": "Regional Queensland",
+  "order": 0,
+  "response": "No work from home",
+  "percent": 60
+ },
+ {
+  "location": "Regional NSW",
+  "order": 1,
+  "response": "Work from home",
+  "percent": 39
+ },
+ {
+  "location": "Regional NSW",
+  "order": 1,
+  "response": "No work from home",
+  "percent": 61
+ },
+ {
+  "location": "Regional Victoria",
+  "order": 2,
+  "response": "Work from home",
+  "percent": 37
+ },
+ {
+  "location": "Regional Victoria",
+  "order": 2,
+  "response": "No work from home",
+  "percent": 63
+ },
+ {
+  "location": "Regional Tasmania",
+  "order": 3,
+  "response": "Work from home",
+  "percent": 36
+ },
+ {
+  "location": "Regional Tasmania",
+  "order": 3,
+  "response": "No work from home",
+  "percent": 64
+ },
+ {
+  "location": "Darwin/Alice Springs (NT)",
+  "order": 4,
+  "response": "Work from home",
+  "percent": 34
+ },
+ {
+  "location": "Darwin/Alice Springs (NT)",
+  "order": 4,
+  "response": "No work from home",
+  "percent": 66
+ },
+ {
+  "location": "Regional South Australia",
+  "order": 5,
+  "response": "Work from home",
+  "percent": 33
+ },
+ {
+  "location": "Regional South Australia",
+  "order": 5,
+  "response": "No work from home",
+  "percent": 67
+ },
+ {
+  "location": "Regional Western Australia",
+  "order": 6,
+  "response": "Work from home",
+  "percent": 31
+ },
+ {
+  "location": "Regional Western Australia",
+  "order": 6,
+  "response": "No work from home",
+  "percent": 69
+ }
+]

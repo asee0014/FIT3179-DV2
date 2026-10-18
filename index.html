@@ -37,7 +37,17 @@
       <p>Areas with darker shading indicate higher proportions of remote work, providing a regional comparison across major city regions.</p>
     </div>
     <div class="pure-u-1-2">
-      <div id="map" class="chart-panel"></div>
+      <div id="wfh-cities-map" class="chart-panel"></div>
+    </div>
+  </div>
+  <div class="pure-g">
+    <div class="pure-u-1-2 text-panel">
+      <h2>Lockdowns by state and territory</h2>
+      <p>This choropleth shows the number of lockdown days and instances across each state and territory.</p>
+      <p>Areas with darker shading indicate longer periods of lockdown, providing a visual comparison of the impact across different regions.</p>
+    </div>
+    <div class="pure-u-1-2">
+      <div id="lockdown-map" class="chart-panel"></div>
     </div>
   </div>
 
@@ -273,10 +283,19 @@
 
         vegaEmbed("#vis-most", mostSpec);
 
-        fetch("test_map.vl.json")
+        fetch("charts/capital_cities_wfh_map.vl.json")
           .then((response) => response.json())
           .then((mapSpec) => {
-            vegaEmbed("#map", mapSpec);
+            vegaEmbed("#wfh-cities-map", mapSpec);
+          })
+          .catch((error) => {
+            console.error("Unable to load GCCSA choropleth spec:", error);
+          });
+
+          fetch("charts/lockdown_map.vl.json")
+          .then((response) => response.json())
+          .then((mapSpec) => {
+            vegaEmbed("#lockdown-map", mapSpec);
           })
           .catch((error) => {
             console.error("Unable to load GCCSA choropleth spec:", error);

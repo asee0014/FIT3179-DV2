@@ -1,0 +1,370 @@
+[
+ {
+  "income_band": "Under $6,000",
+  "order": 0,
+  "income_min": 0,
+  "income_max": 6000,
+  "response": "Work from home",
+  "percent": 25
+ },
+ {
+  "income_band": "Under $6,000",
+  "order": 0,
+  "income_min": 0,
+  "income_max": 6000,
+  "response": "No work from home",
+  "percent": 75
+ },
+ {
+  "income_band": "$6,000-$9,999",
+  "order": 1,
+  "income_min": 6000,
+  "income_max": 9999,
+  "response": "Work from home",
+  "percent": 22
+ },
+ {
+  "income_band": "$6,000-$9,999",
+  "order": 1,
+  "income_min": 6000,
+  "income_max": 9999,
+  "response": "No work from home",
+  "percent": 78
+ },
+ {
+  "income_band": "$10,000-$14,999",
+  "order": 2,
+  "income_min": 10000,
+  "income_max": 14999,
+  "response": "Work from home",
+  "percent": 28
+ },
+ {
+  "income_band": "$10,000-$14,999",
+  "order": 2,
+  "income_min": 10000,
+  "income_max": 14999,
+  "response": "No work from home",
+  "percent": 72
+ },
+ {
+  "income_band": "$15,000-$19,999",
+  "order": 3,
+  "income_min": 15000,
+  "income_max": 19999,
+  "response": "Work from home",
+  "percent": 28
+ },
+ {
+  "income_band": "$15,000-$19,999",
+  "order": 3,
+  "income_min": 15000,
+  "income_max": 19999,
+  "response": "No work from home",
+  "percent": 72
+ },
+ {
+  "income_band": "$20,000-$24,999",
+  "order": 4,
+  "income_min": 20000,
+  "income_max": 24999,
+  "response": "Work from home",
+  "percent": 30
+ },
+ {
+  "income_band": "$20,000-$24,999",
+  "order": 4,
+  "income_min": 20000,
+  "income_max": 24999,
+  "response": "No work from home",
+  "percent": 70
+ },
+ {
+  "income_band": "$25,000-$29,999",
+  "order": 5,
+  "income_min": 25000,
+  "income_max": 29999,
+  "response": "Work from home",
+  "percent": 36
+ },
+ {
+  "income_band": "$25,000-$29,999",
+  "order": 5,
+  "income_min": 25000,
+  "income_max": 29999,
+  "response": "No work from home",
+  "percent": 64
+ },
+ {
+  "income_band": "$30,000-$34,999",
+  "order": 6,
+  "income_min": 30000,
+  "income_max": 34999,
+  "response": "Work from home",
+  "percent": 33
+ },
+ {
+  "income_band": "$30,000-$34,999",
+  "order": 6,
+  "income_min": 30000,
+  "income_max": 34999,
+  "response": "No work from home",
+  "percent": 67
+ },
+ {
+  "income_band": "$35,000-$39,999",
+  "order": 7,
+  "income_min": 35000,
+  "income_max": 39999,
+  "response": "Work from home",
+  "percent": 33
+ },
+ {
+  "income_band": "$35,000-$39,999",
+  "order": 7,
+  "income_min": 35000,
+  "income_max": 39999,
+  "response": "No work from home",
+  "percent": 67
+ },
+ {
+  "income_band": "$40,000-$44,999",
+  "order": 8,
+  "income_min": 40000,
+  "income_max": 44999,
+  "response": "Work from home",
+  "percent": 34
+ },
+ {
+  "income_band": "$40,000-$44,999",
+  "order": 8,
+  "income_min": 40000,
+  "income_max": 44999,
+  "response": "No work from home",
+  "percent": 66
+ },
+ {
+  "income_band": "$45,000-$49,999",
+  "order": 9,
+  "income_min": 45000,
+  "income_max": 49999,
+  "response": "Work from home",
+  "percent": 36
+ },
+ {
+  "income_band": "$45,000-$49,999",
+  "order": 9,
+  "income_min": 45000,
+  "income_max": 49999,
+  "response": "No work from home",
+  "percent": 64
+ },
+ {
+  "income_band": "$50,000-$59,999",
+  "order": 10,
+  "income_min": 50000,
+  "income_max": 59999,
+  "response": "Work from home",
+  "percent": 38
+ },
+ {
+  "income_band": "$50,000-$59,999",
+  "order": 10,
+  "income_min": 50000,
+  "income_max": 59999,
+  "response": "No work from home",
+  "percent": 62
+ },
+ {
+  "income_band": "$60,000-$69,999",
+  "order": 11,
+  "income_min": 60000,
+  "income_max": 69999,
+  "response": "Work from home",
+  "percent": 42
+ },
+ {
+  "income_band": "$60,000-$69,999",
+  "order": 11,
+  "income_min": 60000,
+  "income_max": 69999,
+  "response": "No work from home",
+  "percent": 58
+ },
+ {
+  "income_band": "$70,000-$79,999",
+  "order": 12,
+  "income_min": 70000,
+  "income_max": 79999,
+  "response": "Work from home",
+  "percent": 45
+ },
+ {
+  "income_band": "$70,000-$79,999",
+  "order": 12,
+  "income_min": 70000,
+  "income_max": 79999,
+  "response": "No work from home",
+  "percent": 55
+ },
+ {
+  "income_band": "$80,000-$89,999",
+  "order": 13,
+  "income_min": 80000,
+  "income_max": 89999,
+  "response": "Work from home",
+  "percent": 46
+ },
+ {
+  "income_band": "$80,000-$89,999",
+  "order": 13,
+  "income_min": 80000,
+  "income_max": 89999,
+  "response": "No work from home",
+  "percent": 54
+ },
+ {
+  "income_band": "$90,000-$99,999",
+  "order": 14,
+  "income_min": 90000,
+  "income_max": 99999,
+  "response": "Work from home",
+  "percent": 53
+ },
+ {
+  "income_band": "$90,000-$99,999",
+  "order": 14,
+  "income_min": 90000,
+  "income_max": 99999,
+  "response": "No work from home",
+  "percent": 47
+ },
+ {
+  "income_band": "$100,000-$109,999",
+  "order": 15,
+  "income_min": 100000,
+  "income_max": 109999,
+  "response": "Work from home",
+  "percent": 56
+ },
+ {
+  "income_band": "$100,000-$109,999",
+  "order": 15,
+  "income_min": 100000,
+  "income_max": 109999,
+  "response": "No work from home",
+  "percent": 44
+ },
+ {
+  "income_band": "$110,000-$119,999",
+  "order": 16,
+  "income_min": 110000,
+  "income_max": 119999,
+  "response": "Work from home",
+  "percent": 55
+ },
+ {
+  "income_band": "$110,000-$119,999",
+  "order": 16,
+  "income_min": 110000,
+  "income_max": 119999,
+  "response": "No work from home",
+  "percent": 45
+ },
+ {
+  "income_band": "$120,000-$129,999",
+  "order": 17,
+  "income_min": 120000,
+  "income_max": 129999,
+  "response": "Work from home",
+  "percent": 57
+ },
+ {
+  "income_band": "$120,000-$129,999",
+  "order": 17,
+  "income_min": 120000,
+  "income_max": 129999,
+  "response": "No work from home",
+  "percent": 43
+ },
+ {
+  "income_band": "$130,000-$149,999",
+  "order": 18,
+  "income_min": 130000,
+  "income_max": 149999,
+  "response": "Work from home",
+  "percent": 58
+ },
+ {
+  "income_band": "$130,000-$149,999",
+  "order": 18,
+  "income_min": 130000,
+  "income_max": 149999,
+  "response": "No work from home",
+  "percent": 42
+ },
+ {
+  "income_band": "$150,000-$199,999",
+  "order": 19,
+  "income_min": 150000,
+  "income_max": 199999,
+  "response": "Work from home",
+  "percent": 61
+ },
+ {
+  "income_band": "$150,000-$199,999",
+  "order": 19,
+  "income_min": 150000,
+  "income_max": 199999,
+  "response": "No work from home",
+  "percent": 39
+ },
+ {
+  "income_band": "$200,000-$249,999",
+  "order": 20,
+  "income_min": 200000,
+  "income_max": 249999,
+  "response": "Work from home",
+  "percent": 63
+ },
+ {
+  "income_band": "$200,000-$249,999",
+  "order": 20,
+  "income_min": 200000,
+  "income_max": 249999,
+  "response": "No work from home",
+  "percent": 37
+ },
+ {
+  "income_band": "$250,000-$299,999",
+  "order": 21,
+  "income_min": 250000,
+  "income_max": 299999,
+  "response": "Work from home",
+  "percent": 61
+ },
+ {
+  "income_band": "$250,000-$299,999",
+  "order": 21,
+  "income_min": 250000,
+  "income_max": 299999,
+  "response": "No work from home",
+  "percent": 39
+ },
+ {
+  "income_band": "$300,000 or more",
+  "order": 22,
+  "income_min": 300000,
+  "income_max": null,
+  "response": "Work from home",
+  "percent": 64
+ },
+ {
+  "income_band": "$300,000 or more",
+  "order": 22,
+  "income_min": 300000,
+  "income_max": null,
+  "response": "No work from home",
+  "percent": 36
+ }
+]

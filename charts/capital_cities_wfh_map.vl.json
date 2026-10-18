@@ -7,14 +7,14 @@
     "layer": [
         {
             "data": {
-                "url": "GCCSA_2021_AUST_GDA2020.json",
+                "url": "./topojson/GCCSA_2021_AUST_GDA2020.json",
                 "format": {"type": "topojson", "feature":"GCCSA_2021_AUST_GDA2020"}
             },
             "mark": {"type": "geoshape", "fill": "lightgray", "stroke":"white"}
         },
         {
             "data": {
-                "url": "roy-morgan/capital_cities_wfh.json"
+                "url": "./data/roy-morgan/capital_cities_wfh.json"
             },
             "transform": [
                 {

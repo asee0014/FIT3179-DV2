@@ -1,0 +1,936 @@
+{
+ "capital_cities": [
+  {
+   "location": "Australia",
+   "order": 0,
+   "response": "Work from home",
+   "percent": 46
+  },
+  {
+   "location": "Australia",
+   "order": 0,
+   "response": "No work from home",
+   "percent": 54
+  },
+  {
+   "location": "Sydney",
+   "order": 1,
+   "response": "Work from home",
+   "percent": 55
+  },
+  {
+   "location": "Sydney",
+   "order": 1,
+   "response": "No work from home",
+   "percent": 45
+  },
+  {
+   "location": "Melbourne",
+   "order": 2,
+   "response": "Work from home",
+   "percent": 52
+  },
+  {
+   "location": "Melbourne",
+   "order": 2,
+   "response": "No work from home",
+   "percent": 48
+  },
+  {
+   "location": "Canberra",
+   "order": 3,
+   "response": "Work from home",
+   "percent": 51
+  },
+  {
+   "location": "Canberra",
+   "order": 3,
+   "response": "No work from home",
+   "percent": 49
+  },
+  {
+   "location": "Adelaide",
+   "order": 4,
+   "response": "Work from home",
+   "percent": 44
+  },
+  {
+   "location": "Adelaide",
+   "order": 4,
+   "response": "No work from home",
+   "percent": 56
+  },
+  {
+   "location": "Brisbane",
+   "order": 5,
+   "response": "Work from home",
+   "percent": 43
+  },
+  {
+   "location": "Brisbane",
+   "order": 5,
+   "response": "No work from home",
+   "percent": 57
+  },
+  {
+   "location": "Perth",
+   "order": 6,
+   "response": "Work from home",
+   "percent": 40
+  },
+  {
+   "location": "Perth",
+   "order": 6,
+   "response": "No work from home",
+   "percent": 60
+  },
+  {
+   "location": "NT",
+   "order": 7,
+   "response": "Work from home",
+   "percent": 34
+  },
+  {
+   "location": "NT",
+   "order": 7,
+   "response": "No work from home",
+   "percent": 66
+  },
+  {
+   "location": "Hobart",
+   "order": 8,
+   "response": "Work from home",
+   "percent": 45
+  },
+  {
+   "location": "Hobart",
+   "order": 8,
+   "response": "No work from home",
+   "percent": 55
+  }
+ ],
+ "regional_areas": [
+  {
+   "location": "Regional Queensland",
+   "order": 0,
+   "response": "Work from home",
+   "percent": 40
+  },
+  {
+   "location": "Regional Queensland",
+   "order": 0,
+   "response": "No work from home",
+   "percent": 60
+  },
+  {
+   "location": "Regional NSW",
+   "order": 1,
+   "response": "Work from home",
+   "percent": 39
+  },
+  {
+   "location": "Regional NSW",
+   "order": 1,
+   "response": "No work from home",
+   "percent": 61
+  },
+  {
+   "location": "Regional Victoria",
+   "order": 2,
+   "response": "Work from home",
+   "percent": 37
+  },
+  {
+   "location": "Regional Victoria",
+   "order": 2,
+   "response": "No work from home",
+   "percent": 63
+  },
+  {
+   "location": "Regional Tasmania",
+   "order": 3,
+   "response": "Work from home",
+   "percent": 36
+  },
+  {
+   "location": "Regional Tasmania",
+   "order": 3,
+   "response": "No work from home",
+   "percent": 64
+  },
+  {
+   "location": "Darwin/Alice Springs (NT)",
+   "order": 4,
+   "response": "Work from home",
+   "percent": 34
+  },
+  {
+   "location": "Darwin/Alice Springs (NT)",
+   "order": 4,
+   "response": "No work from home",
+   "percent": 66
+  },
+  {
+   "location": "Regional South Australia",
+   "order": 5,
+   "response": "Work from home",
+   "percent": 33
+  },
+  {
+   "location": "Regional South Australia",
+   "order": 5,
+   "response": "No work from home",
+   "percent": 67
+  },
+  {
+   "location": "Regional Western Australia",
+   "order": 6,
+   "response": "Work from home",
+   "percent": 31
+  },
+  {
+   "location": "Regional Western Australia",
+   "order": 6,
+   "response": "No work from home",
+   "percent": 69
+  }
+ ],
+ "cbd_workers": [
+  {
+   "cbd": "Sydney",
+   "order": 0,
+   "response": "Work from home",
+   "percent": 70
+  },
+  {
+   "cbd": "Sydney",
+   "order": 0,
+   "response": "No work from home",
+   "percent": 30
+  },
+  {
+   "cbd": "Canberra",
+   "order": 1,
+   "response": "Work from home",
+   "percent": 61
+  },
+  {
+   "cbd": "Canberra",
+   "order": 1,
+   "response": "No work from home",
+   "percent": 39
+  },
+  {
+   "cbd": "Melbourne",
+   "order": 2,
+   "response": "Work from home",
+   "percent": 65
+  },
+  {
+   "cbd": "Melbourne",
+   "order": 2,
+   "response": "No work from home",
+   "percent": 35
+  },
+  {
+   "cbd": "Brisbane",
+   "order": 3,
+   "response": "Work from home",
+   "percent": 52
+  },
+  {
+   "cbd": "Brisbane",
+   "order": 3,
+   "response": "No work from home",
+   "percent": 48
+  },
+  {
+   "cbd": "Adelaide",
+   "order": 4,
+   "response": "Work from home",
+   "percent": 45
+  },
+  {
+   "cbd": "Adelaide",
+   "order": 4,
+   "response": "No work from home",
+   "percent": 55
+  },
+  {
+   "cbd": "Perth",
+   "order": 5,
+   "response": "Work from home",
+   "percent": 49
+  },
+  {
+   "cbd": "Perth",
+   "order": 5,
+   "response": "No work from home",
+   "percent": 51
+  },
+  {
+   "cbd": "Hobart",
+   "order": 6,
+   "response": "Work from home",
+   "percent": 51
+  },
+  {
+   "cbd": "Hobart",
+   "order": 6,
+   "response": "No work from home",
+   "percent": 49
+  },
+  {
+   "cbd": "Darwin",
+   "order": 7,
+   "response": "Work from home",
+   "percent": 42
+  },
+  {
+   "cbd": "Darwin",
+   "order": 7,
+   "response": "No work from home",
+   "percent": 58
+  },
+  {
+   "cbd": "Total city workers",
+   "order": 8,
+   "response": "Work from home",
+   "percent": 60
+  },
+  {
+   "cbd": "Total city workers",
+   "order": 8,
+   "response": "No work from home",
+   "percent": 40
+  }
+ ],
+ "workplace_size": [
+  {
+   "workplace_size": "Total workers",
+   "order": 0,
+   "response": "Work from home",
+   "percent": 46
+  },
+  {
+   "workplace_size": "Total workers",
+   "order": 0,
+   "response": "No work from home",
+   "percent": 54
+  },
+  {
+   "workplace_size": "Only self",
+   "order": 1,
+   "response": "Work from home",
+   "percent": 55
+  },
+  {
+   "workplace_size": "Only self",
+   "order": 1,
+   "response": "No work from home",
+   "percent": 45
+  },
+  {
+   "workplace_size": "2-4 people",
+   "order": 2,
+   "response": "Work from home",
+   "percent": 48
+  },
+  {
+   "workplace_size": "2-4 people",
+   "order": 2,
+   "response": "No work from home",
+   "percent": 52
+  },
+  {
+   "workplace_size": "5-9 people",
+   "order": 3,
+   "response": "Work from home",
+   "percent": 38
+  },
+  {
+   "workplace_size": "5-9 people",
+   "order": 3,
+   "response": "No work from home",
+   "percent": 62
+  },
+  {
+   "workplace_size": "10-24 people",
+   "order": 4,
+   "response": "Work from home",
+   "percent": 38
+  },
+  {
+   "workplace_size": "10-24 people",
+   "order": 4,
+   "response": "No work from home",
+   "percent": 62
+  },
+  {
+   "workplace_size": "25-49 people",
+   "order": 5,
+   "response": "Work from home",
+   "percent": 42
+  },
+  {
+   "workplace_size": "25-49 people",
+   "order": 5,
+   "response": "No work from home",
+   "percent": 58
+  },
+  {
+   "workplace_size": "50-99 people",
+   "order": 6,
+   "response": "Work from home",
+   "percent": 44
+  },
+  {
+   "workplace_size": "50-99 people",
+   "order": 6,
+   "response": "No work from home",
+   "percent": 56
+  },
+  {
+   "workplace_size": "100-299 people",
+   "order": 7,
+   "response": "Work from home",
+   "percent": 45
+  },
+  {
+   "workplace_size": "100-299 people",
+   "order": 7,
+   "response": "No work from home",
+   "percent": 55
+  },
+  {
+   "workplace_size": "300-499 people",
+   "order": 8,
+   "response": "Work from home",
+   "percent": 49
+  },
+  {
+   "workplace_size": "300-499 people",
+   "order": 8,
+   "response": "No work from home",
+   "percent": 51
+  },
+  {
+   "workplace_size": "500-999 people",
+   "order": 9,
+   "response": "Work from home",
+   "percent": 51
+  },
+  {
+   "workplace_size": "500-999 people",
+   "order": 9,
+   "response": "No work from home",
+   "percent": 49
+  },
+  {
+   "workplace_size": "1000+ people",
+   "order": 10,
+   "response": "Work from home",
+   "percent": 52
+  },
+  {
+   "workplace_size": "1000+ people",
+   "order": 10,
+   "response": "No work from home",
+   "percent": 48
+  }
+ ],
+ "personal_income": [
+  {
+   "income_band": "Under $6,000",
+   "order": 0,
+   "income_min": 0,
+   "income_max": 6000,
+   "response": "Work from home",
+   "percent": 25
+  },
+  {
+   "income_band": "Under $6,000",
+   "order": 0,
+   "income_min": 0,
+   "income_max": 6000,
+   "response": "No work from home",
+   "percent": 75
+  },
+  {
+   "income_band": "$6,000-$9,999",
+   "order": 1,
+   "income_min": 6000,
+   "income_max": 9999,
+   "response": "Work from home",
+   "percent": 22
+  },
+  {
+   "income_band": "$6,000-$9,999",
+   "order": 1,
+   "income_min": 6000,
+   "income_max": 9999,
+   "response": "No work from home",
+   "percent": 78
+  },
+  {
+   "income_band": "$10,000-$14,999",
+   "order": 2,
+   "income_min": 10000,
+   "income_max": 14999,
+   "response": "Work from home",
+   "percent": 28
+  },
+  {
+   "income_band": "$10,000-$14,999",
+   "order": 2,
+   "income_min": 10000,
+   "income_max": 14999,
+   "response": "No work from home",
+   "percent": 72
+  },
+  {
+   "income_band": "$15,000-$19,999",
+   "order": 3,
+   "income_min": 15000,
+   "income_max": 19999,
+   "response": "Work from home",
+   "percent": 28
+  },
+  {
+   "income_band": "$15,000-$19,999",
+   "order": 3,
+   "income_min": 15000,
+   "income_max": 19999,
+   "response": "No work from home",
+   "percent": 72
+  },
+  {
+   "income_band": "$20,000-$24,999",
+   "order": 4,
+   "income_min": 20000,
+   "income_max": 24999,
+   "response": "Work from home",
+   "percent": 30
+  },
+  {
+   "income_band": "$20,000-$24,999",
+   "order": 4,
+   "income_min": 20000,
+   "income_max": 24999,
+   "response": "No work from home",
+   "percent": 70
+  },
+  {
+   "income_band": "$25,000-$29,999",
+   "order": 5,
+   "income_min": 25000,
+   "income_max": 29999,
+   "response": "Work from home",
+   "percent": 36
+  },
+  {
+   "income_band": "$25,000-$29,999",
+   "order": 5,
+   "income_min": 25000,
+   "income_max": 29999,
+   "response": "No work from home",
+   "percent": 64
+  },
+  {
+   "income_band": "$30,000-$34,999",
+   "order": 6,
+   "income_min": 30000,
+   "income_max": 34999,
+   "response": "Work from home",
+   "percent": 33
+  },
+  {
+   "income_band": "$30,000-$34,999",
+   "order": 6,
+   "income_min": 30000,
+   "income_max": 34999,
+   "response": "No work from home",
+   "percent": 67
+  },
+  {
+   "income_band": "$35,000-$39,999",
+   "order": 7,
+   "income_min": 35000,
+   "income_max": 39999,
+   "response": "Work from home",
+   "percent": 33
+  },
+  {
+   "income_band": "$35,000-$39,999",
+   "order": 7,
+   "income_min": 35000,
+   "income_max": 39999,
+   "response": "No work from home",
+   "percent": 67
+  },
+  {
+   "income_band": "$40,000-$44,999",
+   "order": 8,
+   "income_min": 40000,
+   "income_max": 44999,
+   "response": "Work from home",
+   "percent": 34
+  },
+  {
+   "income_band": "$40,000-$44,999",
+   "order": 8,
+   "income_min": 40000,
+   "income_max": 44999,
+   "response": "No work from home",
+   "percent": 66
+  },
+  {
+   "income_band": "$45,000-$49,999",
+   "order": 9,
+   "income_min": 45000,
+   "income_max": 49999,
+   "response": "Work from home",
+   "percent": 36
+  },
+  {
+   "income_band": "$45,000-$49,999",
+   "order": 9,
+   "income_min": 45000,
+   "income_max": 49999,
+   "response": "No work from home",
+   "percent": 64
+  },
+  {
+   "income_band": "$50,000-$59,999",
+   "order": 10,
+   "income_min": 50000,
+   "income_max": 59999,
+   "response": "Work from home",
+   "percent": 38
+  },
+  {
+   "income_band": "$50,000-$59,999",
+   "order": 10,
+   "income_min": 50000,
+   "income_max": 59999,
+   "response": "No work from home",
+   "percent": 62
+  },
+  {
+   "income_band": "$60,000-$69,999",
+   "order": 11,
+   "income_min": 60000,
+   "income_max": 69999,
+   "response": "Work from home",
+   "percent": 42
+  },
+  {
+   "income_band": "$60,000-$69,999",
+   "order": 11,
+   "income_min": 60000,
+   "income_max": 69999,
+   "response": "No work from home",
+   "percent": 58
+  },
+  {
+   "income_band": "$70,000-$79,999",
+   "order": 12,
+   "income_min": 70000,
+   "income_max": 79999,
+   "response": "Work from home",
+   "percent": 45
+  },
+  {
+   "income_band": "$70,000-$79,999",
+   "order": 12,
+   "income_min": 70000,
+   "income_max": 79999,
+   "response": "No work from home",
+   "percent": 55
+  },
+  {
+   "income_band": "$80,000-$89,999",
+   "order": 13,
+   "income_min": 80000,
+   "income_max": 89999,
+   "response": "Work from home",
+   "percent": 46
+  },
+  {
+   "income_band": "$80,000-$89,999",
+   "order": 13,
+   "income_min": 80000,
+   "income_max": 89999,
+   "response": "No work from home",
+   "percent": 54
+  },
+  {
+   "income_band": "$90,000-$99,999",
+   "order": 14,
+   "income_min": 90000,
+   "income_max": 99999,
+   "response": "Work from home",
+   "percent": 53
+  },
+  {
+   "income_band": "$90,000-$99,999",
+   "order": 14,
+   "income_min": 90000,
+   "income_max": 99999,
+   "response": "No work from home",
+   "percent": 47
+  },
+  {
+   "income_band": "$100,000-$109,999",
+   "order": 15,
+   "income_min": 100000,
+   "income_max": 109999,
+   "response": "Work from home",
+   "percent": 56
+  },
+  {
+   "income_band": "$100,000-$109,999",
+   "order": 15,
+   "income_min": 100000,
+   "income_max": 109999,
+   "response": "No work from home",
+   "percent": 44
+  },
+  {
+   "income_band": "$110,000-$119,999",
+   "order": 16,
+   "income_min": 110000,
+   "income_max": 119999,
+   "response": "Work from home",
+   "percent": 55
+  },
+  {
+   "income_band": "$110,000-$119,999",
+   "order": 16,
+   "income_min": 110000,
+   "income_max": 119999,
+   "response": "No work from home",
+   "percent": 45
+  },
+  {
+   "income_band": "$120,000-$129,999",
+   "order": 17,
+   "income_min": 120000,
+   "income_max": 129999,
+   "response": "Work from home",
+   "percent": 57
+  },
+  {
+   "income_band": "$120,000-$129,999",
+   "order": 17,
+   "income_min": 120000,
+   "income_max": 129999,
+   "response": "No work from home",
+   "percent": 43
+  },
+  {
+   "income_band": "$130,000-$149,999",
+   "order": 18,
+   "income_min": 130000,
+   "income_max": 149999,
+   "response": "Work from home",
+   "percent": 58
+  },
+  {
+   "income_band": "$130,000-$149,999",
+   "order": 18,
+   "income_min": 130000,
+   "income_max": 149999,
+   "response": "No work from home",
+   "percent": 42
+  },
+  {
+   "income_band": "$150,000-$199,999",
+   "order": 19,
+   "income_min": 150000,
+   "income_max": 199999,
+   "response": "Work from home",
+   "percent": 61
+  },
+  {
+   "income_band": "$150,000-$199,999",
+   "order": 19,
+   "income_min": 150000,
+   "income_max": 199999,
+   "response": "No work from home",
+   "percent": 39
+  },
+  {
+   "income_band": "$200,000-$249,999",
+   "order": 20,
+   "income_min": 200000,
+   "income_max": 249999,
+   "response": "Work from home",
+   "percent": 63
+  },
+  {
+   "income_band": "$200,000-$249,999",
+   "order": 20,
+   "income_min": 200000,
+   "income_max": 249999,
+   "response": "No work from home",
+   "percent": 37
+  },
+  {
+   "income_band": "$250,000-$299,999",
+   "order": 21,
+   "income_min": 250000,
+   "income_max": 299999,
+   "response": "Work from home",
+   "percent": 61
+  },
+  {
+   "income_band": "$250,000-$299,999",
+   "order": 21,
+   "income_min": 250000,
+   "income_max": 299999,
+   "response": "No work from home",
+   "percent": 39
+  },
+  {
+   "income_band": "$300,000 or more",
+   "order": 22,
+   "income_min": 300000,
+   "income_max": null,
+   "response": "Work from home",
+   "percent": 64
+  },
+  {
+   "income_band": "$300,000 or more",
+   "order": 22,
+   "income_min": 300000,
+   "income_max": null,
+   "response": "No work from home",
+   "percent": 36
+  }
+ ],
+ "industry": [
+  {
+   "industry": "Finance & Insurance",
+   "order": 0,
+   "response": "Work from home",
+   "percent": 66
+  },
+  {
+   "industry": "Finance & Insurance",
+   "order": 0,
+   "response": "No work from home",
+   "percent": 34
+  },
+  {
+   "industry": "Communication",
+   "order": 1,
+   "response": "Work from home",
+   "percent": 61
+  },
+  {
+   "industry": "Communication",
+   "order": 1,
+   "response": "No work from home",
+   "percent": 39
+  },
+  {
+   "industry": "Property & Business Services",
+   "order": 2,
+   "response": "Work from home",
+   "percent": 57
+  },
+  {
+   "industry": "Property & Business Services",
+   "order": 2,
+   "response": "No work from home",
+   "percent": 43
+  },
+  {
+   "industry": "Public Administration & Defence",
+   "order": 3,
+   "response": "Work from home",
+   "percent": 56
+  },
+  {
+   "industry": "Public Administration & Defence",
+   "order": 3,
+   "response": "No work from home",
+   "percent": 44
+  },
+  {
+   "industry": "Transport & Storage",
+   "order": 4,
+   "response": "Work from home",
+   "percent": 38
+  },
+  {
+   "industry": "Transport & Storage",
+   "order": 4,
+   "response": "No work from home",
+   "percent": 62
+  },
+  {
+   "industry": "Recreation & Personal Services",
+   "order": 5,
+   "response": "Work from home",
+   "percent": 37
+  },
+  {
+   "industry": "Recreation & Personal Services",
+   "order": 5,
+   "response": "No work from home",
+   "percent": 63
+  },
+  {
+   "industry": "Retail",
+   "order": 6,
+   "response": "Work from home",
+   "percent": 31
+  },
+  {
+   "industry": "Retail",
+   "order": 6,
+   "response": "No work from home",
+   "percent": 69
+  }
+ ],
+ "employment_type": [
+  {
+   "employment_type": "Self-employed",
+   "order": 0,
+   "response": "Work from home",
+   "percent": 54
+  },
+  {
+   "employment_type": "Self-employed",
+   "order": 0,
+   "response": "No work from home",
+   "percent": 46
+  },
+  {
+   "employment_type": "Public service",
+   "order": 1,
+   "response": "Work from home",
+   "percent": 47
+  },
+  {
+   "employment_type": "Public service",
+   "order": 1,
+   "response": "No work from home",
+   "percent": 53
+  },
+  {
+   "employment_type": "Private industry",
+   "order": 2,
+   "response": "Work from home",
+   "percent": 44
+  },
+  {
+   "employment_type": "Private industry",
+   "order": 2,
+   "response": "No work from home",
+   "percent": 56
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+[
+ {
+  "cbd": "Sydney",
+  "order": 0,
+  "response": "Work from home",
+  "percent": 70
+ },
+ {
+  "cbd": "Canberra",
+  "order": 1,
+  "response": "Work from home",
+  "percent": 61
+ },
+ {
+  "cbd": "Melbourne",
+  "order": 2,
+  "response": "Work from home",
+  "percent": 65
+ },
+ {
+  "cbd": "Brisbane",
+  "order": 3,
+  "response": "Work from home",
+  "percent": 52
+ },
+ {
+  "cbd": "Adelaide",
+  "order": 4,
+  "response": "Work from home",
+  "percent": 45
+ },
+ {
+  "cbd": "Perth",
+  "order": 5,
+  "response": "Work from home",
+  "percent": 49
+ },
+ {
+  "cbd": "Hobart",
+  "order": 6,
+  "response": "Work from home",
+  "percent": 51
+ },
+ {
+  "cbd": "Darwin",
+  "order": 7,
+  "response": "Work from home",
+  "percent": 42
+ }
+]

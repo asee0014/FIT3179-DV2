@@ -1,0 +1,50 @@
+[
+    {
+        "state": "NSW",
+        "name": "New South Wales",
+        "lockdown_days": 174,
+        "lockdowns": 4
+    },
+    {
+        "state": "VIC",
+        "name": "Victoria",
+        "lockdown_days": 302,
+        "lockdowns": 7
+    },
+    {
+        "state": "QLD",
+        "name": "Queensland",
+        "lockdown_days": 91,
+        "lockdowns": 6
+    },
+    {
+        "state": "SA",
+        "name": "South Australia",
+        "lockdown_days": 10,
+        "lockdowns": 2
+    },
+    {
+        "state": "WA",
+        "name": "Western Australia",
+        "lockdown_days": 12,
+        "lockdowns": 3
+    },
+    {
+        "state": "TAS",
+        "name": "Tasmania",
+        "lockdown_days": 69,
+        "lockdowns": 2
+    },
+    {
+        "state": "NT",
+        "name": "Northern Territory",
+        "lockdown_days": 53,
+        "lockdowns": 6
+    },
+    {
+        "state": "ACT",
+        "name": "Australian Capital Territory",
+        "lockdown_days": 64,
+        "lockdowns": 1
+    }
+]

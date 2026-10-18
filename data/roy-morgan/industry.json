@@ -1,0 +1,86 @@
+[
+ {
+  "industry": "Finance & Insurance",
+  "order": 0,
+  "response": "Work from home",
+  "percent": 66
+ },
+ {
+  "industry": "Finance & Insurance",
+  "order": 0,
+  "response": "No work from home",
+  "percent": 34
+ },
+ {
+  "industry": "Communication",
+  "order": 1,
+  "response": "Work from home",
+  "percent": 61
+ },
+ {
+  "industry": "Communication",
+  "order": 1,
+  "response": "No work from home",
+  "percent": 39
+ },
+ {
+  "industry": "Property & Business Services",
+  "order": 2,
+  "response": "Work from home",
+  "percent": 57
+ },
+ {
+  "industry": "Property & Business Services",
+  "order": 2,
+  "response": "No work from home",
+  "percent": 43
+ },
+ {
+  "industry": "Public Administration & Defence",
+  "order": 3,
+  "response": "Work from home",
+  "percent": 56
+ },
+ {
+  "industry": "Public Administration & Defence",
+  "order": 3,
+  "response": "No work from home",
+  "percent": 44
+ },
+ {
+  "industry": "Transport & Storage",
+  "order": 4,
+  "response": "Work from home",
+  "percent": 38
+ },
+ {
+  "industry": "Transport & Storage",
+  "order": 4,
+  "response": "No work from home",
+  "percent": 62
+ },
+ {
+  "industry": "Recreation & Personal Services",
+  "order": 5,
+  "response": "Work from home",
+  "percent": 37
+ },
+ {
+  "industry": "Recreation & Personal Services",
+  "order": 5,
+  "response": "No work from home",
+  "percent": 63
+ },
+ {
+  "industry": "Retail",
+  "order": 6,
+  "response": "Work from home",
+  "percent": 31
+ },
+ {
+  "industry": "Retail",
+  "order": 6,
+  "response": "No work from home",
+  "percent": 69
+ }
+]

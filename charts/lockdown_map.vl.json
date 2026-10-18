@@ -1,0 +1,16 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 450,
+    "title": "Lockdowns by state and territory",
+    "projection": {"type": "mercator"},
+    "layer": [
+        {
+            "data": {
+                "url": "./topojson/states_territories.json",
+                "format": {"type": "topojson", "feature":"STE_2021_AUST_GDA2020"}
+            },
+            "mark": {"type": "geoshape", "fill": "lightgray", "stroke":"white"}
+        }
+    ]
+}

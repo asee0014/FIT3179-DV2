@@ -1,0 +1,134 @@
+[
+ {
+  "workplace_size": "Total workers",
+  "order": 0,
+  "response": "Work from home",
+  "percent": 46
+ },
+ {
+  "workplace_size": "Total workers",
+  "order": 0,
+  "response": "No work from home",
+  "percent": 54
+ },
+ {
+  "workplace_size": "Only self",
+  "order": 1,
+  "response": "Work from home",
+  "percent": 55
+ },
+ {
+  "workplace_size": "Only self",
+  "order": 1,
+  "response": "No work from home",
+  "percent": 45
+ },
+ {
+  "workplace_size": "2-4 people",
+  "order": 2,
+  "response": "Work from home",
+  "percent": 48
+ },
+ {
+  "workplace_size": "2-4 people",
+  "order": 2,
+  "response": "No work from home",
+  "percent": 52
+ },
+ {
+  "workplace_size": "5-9 people",
+  "order": 3,
+  "response": "Work from home",
+  "percent": 38
+ },
+ {
+  "workplace_size": "5-9 people",
+  "order": 3,
+  "response": "No work from home",
+  "percent": 62
+ },
+ {
+  "workplace_size": "10-24 people",
+  "order": 4,
+  "response": "Work from home",
+  "percent": 38
+ },
+ {
+  "workplace_size": "10-24 people",
+  "order": 4,
+  "response": "No work from home",
+  "percent": 62
+ },
+ {
+  "workplace_size": "25-49 people",
+  "order": 5,
+  "response": "Work from home",
+  "percent": 42
+ },
+ {
+  "workplace_size": "25-49 people",
+  "order": 5,
+  "response": "No work from home",
+  "percent": 58
+ },
+ {
+  "workplace_size": "50-99 people",
+  "order": 6,
+  "response": "Work from home",
+  "percent": 44
+ },
+ {
+  "workplace_size": "50-99 people",
+  "order": 6,
+  "response": "No work from home",
+  "percent": 56
+ },
+ {
+  "workplace_size": "100-299 people",
+  "order": 7,
+  "response": "Work from home",
+  "percent": 45
+ },
+ {
+  "workplace_size": "100-299 people",
+  "order": 7,
+  "response": "No work from home",
+  "percent": 55
+ },
+ {
+  "workplace_size": "300-499 people",
+  "order": 8,
+  "response": "Work from home",
+  "percent": 49
+ },
+ {
+  "workplace_size": "300-499 people",
+  "order": 8,
+  "response": "No work from home",
+  "percent": 51
+ },
+ {
+  "workplace_size": "500-999 people",
+  "order": 9,
+  "response": "Work from home",
+  "percent": 51
+ },
+ {
+  "workplace_size": "500-999 people",
+  "order": 9,
+  "response": "No work from home",
+  "percent": 49
+ },
+ {
+  "workplace_size": "1000+ people",
+  "order": 10,
+  "response": "Work from home",
+  "percent": 52
+ },
+ {
+  "workplace_size": "1000+ people",
+  "order": 10,
+  "response": "No work from home",
+  "percent": 48
+ }
+]

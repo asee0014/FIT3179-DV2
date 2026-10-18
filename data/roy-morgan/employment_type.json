@@ -1,0 +1,38 @@
+[
+ {
+  "employment_type": "Self-employed",
+  "order": 0,
+  "response": "Work from home",
+  "percent": 54
+ },
+ {
+  "employment_type": "Self-employed",
+  "order": 0,
+  "response": "No work from home",
+  "percent": 46
+ },
+ {
+  "employment_type": "Public service",
+  "order": 1,
+  "response": "Work from home",
+  "percent": 47
+ },
+ {
+  "employment_type": "Public service",
+  "order": 1,
+  "response": "No work from home",
+  "percent": 53
+ },
+ {
+  "employment_type": "Private industry",
+  "order": 2,
+  "response": "Work from home",
+  "percent": 44
+ },
+ {
+  "employment_type": "Private industry",
+  "order": 2,
+  "response": "No work from home",
+  "percent": 56
+ }
+]
