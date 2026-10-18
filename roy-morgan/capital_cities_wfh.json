@@ -1,0 +1,66 @@
+[
+ {
+  "location": "Sydney",
+  "order": 1,
+  "response": "Work from home",
+  "percent": 55,
+  "latitude": -33.87,
+  "longitude": 151.21
+ },
+ {
+  "location": "Melbourne",
+  "order": 2,
+  "response": "Work from home",
+  "percent": 52,
+  "latitude": -37.81,
+  "longitude": 144.96
+ },
+ {
+  "location": "Canberra",
+  "order": 3,
+  "response": "Work from home",
+  "percent": 51,
+  "latitude": -35.28,
+  "longitude": 149.13
+ },
+ {
+  "location": "Adelaide",
+  "order": 4,
+  "response": "Work from home",
+  "percent": 44,
+  "latitude": -34.93,
+  "longitude": 138.6
+ },
+ {
+  "location": "Brisbane",
+  "order": 5,
+  "response": "Work from home",
+  "percent": 43,
+  "latitude": -27.47,
+  "longitude": 153.03
+ },
+ {
+  "location": "Perth",
+  "order": 6,
+  "response": "Work from home",
+  "percent": 40,
+  "latitude": -31.95,
+  "longitude": 115.86
+ },
+ {
+  "location": "NT",
+  "order": 7,
+  "response": "Work from home",
+  "percent": 34,
+  "latitude": -12.46,
+  "longitude": 130.84
+ },
+ {
+  "location": "Hobart",
+  "order": 8,
+  "response": "Work from home",
+  "percent": 45,
+  "latitude": -42.88,
+  "longitude": 147.33
+ }
+]

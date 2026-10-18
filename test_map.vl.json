@@ -1,0 +1,45 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 450,
+    "title": "Working from home percentage by capital city",
+    "projection": {"type": "mercator"},
+    "layer": [
+        {
+            "data": {
+                "url": "GCCSA_2021_AUST_GDA2020.json",
+                "format": {"type": "topojson", "feature":"GCCSA_2021_AUST_GDA2020"}
+            },
+            "mark": {"type": "geoshape", "fill": "lightgray", "stroke":"white"}
+        },
+        {
+            "data": {
+                "url": "roy-morgan/capital_cities_wfh.json"
+            },
+            "transform": [
+                {
+                    "calculate": "if(datum.percent < 40, '30-39', if(datum.percent < 50, '40-49', '50+'))",
+                    "as": "wfh_band"
+                }
+            ],
+            "mark": {"type": "circle", "tooltip": {"content": "data"}},
+            "encoding": {
+                "longitude": {"field": "longitude", "type": "quantitative"},
+                "latitude": {"field": "latitude", "type": "quantitative"},
+                "size": {
+                    "field": "wfh_band",
+                    "type": "nominal",
+                    "title": "wfh percent",
+                    "sort": ["30-39", "40-49", "50+"],
+                    "scale": {
+                        "range": [120, 500, 1800]
+                    },
+                    "legend": {
+                        "values": ["30-39", "40-49", "50+"],
+                        "tickCount": 3
+                    }
+                }
+            }
+        }
+    ]
+}

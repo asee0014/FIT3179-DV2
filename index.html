@@ -30,6 +30,16 @@
       <div id="vis-most" class="chart-panel"></div>
     </div>
   </div>
+  <div class="pure-g">
+    <div class="pure-u-1-2 text-panel">
+      <h2>GCCSA working from home</h2>
+      <p>This choropleth shows the share of people working from home across Greater Capital City Statistical Areas.</p>
+      <p>Areas with darker shading indicate higher proportions of remote work, providing a regional comparison across major city regions.</p>
+    </div>
+    <div class="pure-u-1-2">
+      <div id="map" class="chart-panel"></div>
+    </div>
+  </div>
 
   <script>
     fetch("wfh_long.json")
@@ -262,6 +272,15 @@
         };
 
         vegaEmbed("#vis-most", mostSpec);
+
+        fetch("test_map.vl.json")
+          .then((response) => response.json())
+          .then((mapSpec) => {
+            vegaEmbed("#map", mapSpec);
+          })
+          .catch((error) => {
+            console.error("Unable to load GCCSA choropleth spec:", error);
+          });
       })
       .catch((error) => {
         console.error("Unable to load WFH data:", error);
