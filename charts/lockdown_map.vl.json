@@ -7,10 +7,40 @@
     "layer": [
         {
             "data": {
-                "url": "./topojson/states_territories.json",
+                "url": "../topojson/states_territories.json",
                 "format": {"type": "topojson", "feature":"STE_2021_AUST_GDA2020"}
             },
             "mark": {"type": "geoshape", "fill": "lightgray", "stroke":"white"}
+        },
+        {
+            "data": {
+                "url": "../topojson/states_territories.json",
+                "format": {"type": "topojson", "feature":"STE_2021_AUST_GDA2020"}
+            },
+            "transform": [
+                {
+                    "lookup": "properties.STE_NAME21",
+                    "from": {
+                        "data": {"url": "../data/lockdown_data.json"},
+                        "key": "name",
+                        "fields": ["state", "lockdown_days", "lockdowns"]
+                    }
+                }
+            ],
+            "mark": {"type": "geoshape", "stroke":"white", "strokeWidth": 1},
+            "encoding": {
+                "color": {
+                    "field": "lockdown_days",
+                    "type": "quantitative",
+                    "title": "Lockdown days",
+                    "scale": {"scheme": "yelloworangered"}
+                },
+                "tooltip": [
+                    {"field": "properties.STE_NAME21", "title": "State", "type": "nominal"},
+                    {"field": "lockdown_days", "title": "Lockdown days", "type": "quantitative"},
+                    {"field": "lockdowns", "title": "Lockdowns", "type": "quantitative"}
+                ]
+            }
         }
     ]
 }
