@@ -144,6 +144,20 @@
       return walk(spec);
     }
 
+    function makeResponsiveSpec(spec) {
+      if (!spec || typeof spec !== 'object') {
+        return spec;
+      }
+
+      const next = JSON.parse(JSON.stringify(spec));
+      next.width = 'container';
+      next.autosize = {
+        type: 'fit',
+        contains: 'padding'
+      };
+      return next;
+    }
+
     fetch("wfh_long.json")
       .then((response) => response.json())
       .then((data) => {
@@ -226,7 +240,7 @@
         const spec = {
           $schema: "https://vega.github.io/schema/vega-lite/v5.json",
           description: "Share of employed people working from home over time, with lower and upper estimates shown separately where available.",
-          width: 950,
+          width: "container",
           height: 500,
           title: {
             text: "Worked from home over time",
@@ -367,12 +381,12 @@
           ]
         };
 
-        vegaEmbed("#vis", spec);
+        vegaEmbed("#vis", makeResponsiveSpec(spec));
 
         const mostSpec = {
           $schema: "https://vega.github.io/schema/vega-lite/v5.json",
           description: "Share of employed people who work from home most of the time over time.",
-          width: 360,
+          width: "container",
           height: 420,
           title: {
             text: "Percentage of employees who work From home Most of the time",
@@ -467,12 +481,12 @@
           ]
         };
 
-        vegaEmbed("#vis-most", mostSpec);
+        vegaEmbed("#vis-most", makeResponsiveSpec(mostSpec));
 
         fetch("charts/capital_cities_wfh_map.vl.json")
           .then((response) => response.json())
           .then((mapSpec) => {
-            vegaEmbed("#wfh-cities-map", resolveSpecUrls(mapSpec));
+            vegaEmbed("#wfh-cities-map", makeResponsiveSpec(resolveSpecUrls(mapSpec)));
           })
           .catch((error) => {
             console.error("Unable to load GCCSA choropleth spec:", error);
@@ -481,7 +495,7 @@
         fetch("charts/regional_cbd_wfh_dumbbell.vl.json")
           .then((response) => response.json())
           .then((spec) => {
-            vegaEmbed("#regional-cbd-wfh-dumbbell", resolveSpecUrls(spec));
+            vegaEmbed("#regional-cbd-wfh-dumbbell", makeResponsiveSpec(resolveSpecUrls(spec)));
           })
           .catch((error) => {
             console.error("Unable to load regional vs CBD dumbbell spec:", error);
@@ -490,7 +504,7 @@
         fetch("charts/lockdown_map.vl.json")
           .then((response) => response.json())
           .then((mapSpec) => {
-            vegaEmbed("#lockdown-map", resolveSpecUrls(mapSpec));
+            vegaEmbed("#lockdown-map", makeResponsiveSpec(resolveSpecUrls(mapSpec)));
           })
           .catch((error) => {
             console.error("Unable to load GCCSA choropleth spec:", error);
@@ -499,7 +513,7 @@
         fetch("charts/interstate_migration_arrow_map.vl.json")
           .then((response) => response.json())
           .then((mapSpec) => {
-            vegaEmbed("#migration-map", resolveSpecUrls(mapSpec));
+            vegaEmbed("#migration-map", makeResponsiveSpec(resolveSpecUrls(mapSpec)));
           })
           .catch((error) => {
             console.error("Unable to load migration arrow map spec:", error);
@@ -508,7 +522,7 @@
         fetch("charts/employment_type_bar.vl.json")
           .then((response) => response.json())
           .then((spec) => {
-            vegaEmbed("#employment-type-bar", resolveSpecUrls(spec));
+            vegaEmbed("#employment-type-bar", makeResponsiveSpec(resolveSpecUrls(spec)));
           })
           .catch((error) => {
             console.error("Unable to load employment type bar spec:", error);
@@ -517,7 +531,7 @@
         fetch("charts/personal_income_dot_plot.vl.json")
           .then((response) => response.json())
           .then((spec) => {
-            vegaEmbed("#income-dot-plot", resolveSpecUrls(spec));
+            vegaEmbed("#income-dot-plot", makeResponsiveSpec(resolveSpecUrls(spec)));
           })
           .catch((error) => {
             console.error("Unable to load personal income dot plot spec:", error);
@@ -526,7 +540,7 @@
         fetch("charts/workplace_size_lollipop.vl.json")
           .then((response) => response.json())
           .then((spec) => {
-            vegaEmbed("#workplace-size-lollipop", resolveSpecUrls(spec));
+            vegaEmbed("#workplace-size-lollipop", makeResponsiveSpec(resolveSpecUrls(spec)));
           })
           .catch((error) => {
             console.error("Unable to load workplace size lollipop spec:", error);
