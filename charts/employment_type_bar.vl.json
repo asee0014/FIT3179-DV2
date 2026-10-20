@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Work from home by employment type",
+    "fontSize": 18,
+    "anchor": "start",
+    "dx": 20,
+    "dy": -10
+  },
+  "width": 420,
+  "height": 320,
+  "data": {
+    "values": [
+      { "employment_type": "Self-employed", "percent": 54 },
+      { "employment_type": "Public service", "percent": 47 },
+      { "employment_type": "Private industry", "percent": 44 }
+    ]
+  },
+  "encoding": {
+    "x": {
+      "field": "employment_type",
+      "type": "nominal",
+      "sort": { "field": "percent", "order": "descending" },
+      "title": null,
+      "axis": { "labelAngle": 0 }
+    },
+    "y": {
+      "field": "percent",
+      "type": "quantitative",
+      "title": "Work from home (%)",
+      "scale": { "domain": [0, 60] }
+    },
+    "color": {
+      "field": "employment_type",
+      "type": "nominal",
+      "title": "Employment type",
+      "scale": {
+        "domain": ["Self-employed", "Public service", "Private industry"],
+        "range": ["#4c78a8", "#f58518", "#54a24b"]
+      },
+      "legend": {
+        "orient": "top",
+        "direction": "horizontal",
+        "titleFontSize": 11,
+        "labelFontSize": 10,
+        "offset": 10
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "width": 44,
+        "cornerRadiusTopLeft": 4,
+        "cornerRadiusTopRight": 4
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -6,
+        "align": "center",
+        "baseline": "bottom",
+        "fontSize": 11,
+        "color": "#1f2937"
+      },
+      "encoding": {
+        "text": { "field": "percent", "type": "quantitative", "format": ".0f" },
+        "y": { "field": "percent", "type": "quantitative" }
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 10,
+      "titleFontSize": 11
+    },
+    "legend": {
+      "disable": true
+    }
+  }
+}

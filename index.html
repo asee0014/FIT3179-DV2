@@ -61,6 +61,16 @@
   </div>
   <div class="pure-g">
     <div class="pure-u-1-2 text-panel">
+      <h2>Work from home by employment type</h2>
+      <p>This bar chart shows the share of workers who work from home by employment type.</p>
+      <p>It highlights that self-employed workers are the most likely to work remotely, while public service and private industry employees are somewhat less likely to do so.</p>
+    </div>
+    <div class="pure-u-1-2">
+      <div id="employment-type-bar" class="chart-panel"></div>
+    </div>
+  </div>
+  <div class="pure-g">
+    <div class="pure-u-1-2 text-panel">
       <h2>Work from home by personal income</h2>
       <p>This dot plot shows the share of workers who work from home across personal income bands.</p>
       <p>It reveals that the highest remote-work incidence is concentrated in higher income groups, while lower income groups remain much less likely to work from home.</p>
@@ -356,6 +366,15 @@
           })
           .catch((error) => {
             console.error("Unable to load migration arrow map spec:", error);
+          });
+
+        fetch("charts/employment_type_bar.vl.json")
+          .then((response) => response.json())
+          .then((spec) => {
+            vegaEmbed("#employment-type-bar", spec);
+          })
+          .catch((error) => {
+            console.error("Unable to load employment type bar spec:", error);
           });
 
         fetch("charts/personal_income_dot_plot.vl.json")
