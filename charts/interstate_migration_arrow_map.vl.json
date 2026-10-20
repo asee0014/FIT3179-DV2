@@ -1,0 +1,159 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 450,
+  "title": {
+    "text": "Net interstate migration by state",
+    "fontSize": 18,
+    "anchor": "start",
+    "dx": 20,
+    "dy": -10
+  },
+  "projection": { "type": "mercator" },
+  "layer": [
+    {
+      "data": {
+        "url": "../topojson/states_territories.json",
+        "format": { "type": "topojson", "feature": "STE_2021_AUST_GDA2020" }
+      },
+      "mark": { "type": "geoshape", "fill": "lightgray", "stroke": "white" }
+    },
+    {
+      "data": {
+        "url": "../topojson/states_territories.json",
+        "format": { "type": "topojson", "feature": "STE_2021_AUST_GDA2020" }
+      },
+      "transform": [
+        {
+          "lookup": "properties.STE_NAME21",
+          "from": {
+            "data": { "url": "../data/interstate_migration.json" },
+            "key": "state_name",
+            "fields": ["state", "state_name", "net", "arrivals", "departures"]
+          }
+        }
+      ],
+      "mark": { "type": "geoshape", "stroke": "white", "strokeWidth": 1 },
+      "encoding": {
+        "color": { "value": "#f1f1f1" }
+      }
+    },
+    {
+      "data": { "url": "../data/interstate_migration.json" },
+      "transform": [
+        {
+          "lookup": "state",
+          "from": {
+            "data": {
+              "values": [
+                { "state": "NSW", "longitude": 146.9, "latitude": -32.2 },
+                { "state": "Vic", "longitude": 144.9, "latitude": -37.0 },
+                { "state": "Qld", "longitude": 146.1, "latitude": -23.5 },
+                { "state": "SA", "longitude": 135.6, "latitude": -30.0 },
+                { "state": "WA", "longitude": 121.9, "latitude": -25.6 },
+                { "state": "Tas", "longitude": 146.7, "latitude": -42.1 },
+                { "state": "NT", "longitude": 133.0, "latitude": -19.5 },
+                { "state": "ACT", "longitude": 149.1, "latitude": -35.3 }
+              ]
+            },
+            "key": "state",
+            "fields": ["longitude", "latitude"]
+          }
+        },
+        {
+          "calculate": "datum.net >= 0 ? 'Positive net migration' : 'Negative net migration'",
+          "as": "direction"
+        },
+        {
+          "calculate": "datum.net >= 0 ? format(datum.net, ',.0f') + ' ↑' : format(datum.net, ',.0f') + ' ↓'",
+          "as": "net_label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "dy": 12
+      },
+      "encoding": {
+        "longitude": { "field": "longitude", "type": "quantitative" },
+        "latitude": { "field": "latitude", "type": "quantitative" },
+        "text": { "field": "net_label", "type": "nominal" },
+        "color": {
+          "field": "direction",
+          "type": "nominal",
+          "legend": {
+            "title": "Net migration",
+            "orient": "top",
+            "direction": "horizontal",
+            "labelFontSize": 11,
+            "titleFontSize": 12,
+            "labelLimit": 220
+          },
+          "scale": {
+            "domain": ["Positive net migration", "Negative net migration"],
+            "range": ["#2e7d32", "#c62828"]
+          }
+        },
+        "tooltip": [
+          { "field": "state_name", "title": "State", "type": "nominal" },
+          { "field": "net", "title": "Net migration", "type": "quantitative", "format": ",.0f" },
+          { "field": "arrivals", "title": "Arrivals", "type": "quantitative", "format": ",.0f" },
+          { "field": "departures", "title": "Departures", "type": "quantitative", "format": ",.0f" }
+        ]
+      }
+    },
+    {
+      "data": { "url": "../data/interstate_migration.json" },
+      "transform": [
+        {
+          "lookup": "state",
+          "from": {
+            "data": {
+              "values": [
+                { "state": "NSW", "longitude": 146.9, "latitude": -32.2 },
+                { "state": "Vic", "longitude": 144.9, "latitude": -37.0 },
+                { "state": "Qld", "longitude": 146.1, "latitude": -23.5 },
+                { "state": "SA", "longitude": 135.6, "latitude": -30.0 },
+                { "state": "WA", "longitude": 121.9, "latitude": -25.6 },
+                { "state": "Tas", "longitude": 146.7, "latitude": -42.1 },
+                { "state": "NT", "longitude": 133.0, "latitude": -19.5 },
+                { "state": "ACT", "longitude": 149.1, "latitude": -35.3 }
+              ]
+            },
+            "key": "state",
+            "fields": ["longitude", "latitude"]
+          }
+        },
+        {
+          "calculate": "datum.net >= 0 ? 'Positive net migration' : 'Negative net migration'",
+          "as": "direction"
+        },
+        {
+          "calculate": "datum.net >= 0 ? format(datum.net, ',.0f') + ' ↑' : format(datum.net, ',.0f') + ' ↓'",
+          "as": "net_label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "dy": 12
+      },
+      "encoding": {
+        "longitude": { "field": "longitude", "type": "quantitative" },
+        "latitude": { "field": "latitude", "type": "quantitative" },
+        "text": { "field": "net_label", "type": "nominal" },
+        "color": {
+          "field": "direction",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": ["Positive net migration", "Negative net migration"],
+            "range": ["#2e7d32", "#c62828"]
+          }
+        }
+      }
+    }
+  ]
+}

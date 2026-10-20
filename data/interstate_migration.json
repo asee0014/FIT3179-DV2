@@ -1,0 +1,58 @@
+[
+  {
+    "state": "NSW",
+    "state_name": "New South Wales",
+    "arrivals": 85880,
+    "departures": 106698,
+    "net": -20818
+  },
+  {
+    "state": "Vic",
+    "state_name": "Victoria",
+    "arrivals": 75580,
+    "departures": 75498,
+    "net": 82
+  },
+  {
+    "state": "Qld",
+    "state_name": "Queensland",
+    "arrivals": 98121,
+    "departures": 83403,
+    "net": 14718
+  },
+  {
+    "state": "SA",
+    "state_name": "South Australia",
+    "arrivals": 24192,
+    "departures": 25400,
+    "net": -1208
+  },
+  {
+    "state": "WA",
+    "state_name": "Western Australia",
+    "arrivals": 38129,
+    "departures": 27815,
+    "net": 10314
+  },
+  {
+    "state": "Tas",
+    "state_name": "Tasmania",
+    "arrivals": 14559,
+    "departures": 14657,
+    "net": -98
+  },
+  {
+    "state": "NT",
+    "state_name": "Northern Territory",
+    "arrivals": 14290,
+    "departures": 15879,
+    "net": -1589
+  },
+  {
+    "state": "ACT",
+    "state_name": "Australian Capital Territory",
+    "arrivals": 19487,
+    "departures": 20888,
+    "net": -1401
+  }
+]
