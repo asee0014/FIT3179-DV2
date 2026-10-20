@@ -149,7 +149,7 @@
       .then((data) => {
         const blueSeriesBefore = data
           .filter((d) =>
-            d.date >= "2000-01-01" &&
+            d.date >= "2008-01-01" &&
             d.measure === "Worked from home" &&
             d.date <= "2019-08-01"
           )
@@ -168,8 +168,11 @@
           .sort((a, b) => new Date(a.date) - new Date(b.date));
 
         const mostOfTheTimeSeries = data
-          .filter((d) => d.date >= "2000-01-01" && d.measure === "Most of the time")
+          .filter((d) => d.date >= "2007-04-01" && d.measure === "Most of the time")
           .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+        const mostOfTheTimeSeriesBeforeGap = mostOfTheTimeSeries.filter((d) => d.date >= "2007-04-01" && d.date <= "2008-11-01");
+        const mostOfTheTimeSeriesAfterGap = mostOfTheTimeSeries.filter((d) => d.date >= "2020-09-01");
 
         const connectorPairs = [
           [
@@ -234,6 +237,39 @@
           },
           layer: [
             ...connectorLayers,
+            {
+              data: { values: [{ start: "2020-01-01", end: "2021-12-01" }] },
+              mark: { type: "rect", color: "#f4d03f", opacity: 0.25 },
+              encoding: {
+                x: {
+                  field: "start",
+                  type: "temporal",
+                  axis: {
+                    title: "Year",
+                    format: "%Y"
+                  }
+                },
+                x2: { field: "end", type: "temporal" },
+                y: { value: 0 },
+                y2: { value: 500 }
+              }
+            },
+            {
+              data: { values: [{ x: "2021-01-01", label: "COVID-19 Pandemic" }] },
+              mark: {
+                type: "text",
+                color: "#8a6d00",
+                fontSize: 10,
+                fontWeight: "bold",
+                align: "center",
+                baseline: "middle"
+              },
+              encoding: {
+                x: { field: "x", type: "temporal" },
+                y: { value: 250 },
+                text: { field: "label", type: "nominal" }
+              }
+            },
             {
               data: { values: blueSeriesBefore },
               mark: { type: "line", point: true, strokeWidth: 2.5, color: "#1f77b4" },
@@ -339,38 +375,96 @@
           width: 360,
           height: 420,
           title: {
-            text: "Most of the time",
+            text: "Percentage of employees who work From home Most of the time",
             fontSize: 18,
             anchor: "start",
             dx: 20,
             dy: -10
           },
-          data: { values: mostOfTheTimeSeries },
-          mark: { type: "line", point: true, strokeWidth: 2.5, color: "#8c564b" },
-          encoding: {
-            x: {
-              field: "date",
-              type: "temporal",
-              axis: {
-                title: "Year",
-                format: "%Y"
+          layer: [
+            {
+              data: { values: [{ start: "2008-11-01", end: "2020-09-01" }] },
+              mark: { type: "rect", color: "#dddddd", opacity: 0.75 },
+              encoding: {
+                x: { field: "start", type: "temporal", axis: null },
+                x2: { field: "end", type: "temporal" },
+                y: { value: 28 },
+                y2: { value: 392 }
               }
             },
-            y: {
-              field: "value",
-              type: "quantitative",
-              axis: {
-                title: "% of employed people",
-                format: ".0f"
+            {
+              data: { values: [{ x: "2014-12-01", label: "No data" }] },
+              mark: {
+                type: "text",
+                color: "#666666",
+                fontSize: 12,
+                fontWeight: "bold",
+                align: "center",
+                baseline: "middle"
+              },
+              encoding: {
+                x: { field: "x", type: "temporal" },
+                y: { value: 210 },
+                text: { field: "label", type: "nominal" }
               }
             },
-            tooltip: [
-              { field: "measure", type: "nominal", title: "Measure" },
-              { field: "year", type: "quantitative", title: "Year" },
-              { field: "value", type: "quantitative", title: "%", format: ".1f" },
-              { field: "period", type: "nominal", title: "Period" }
-            ]
-          }
+            {
+              data: { values: mostOfTheTimeSeriesBeforeGap },
+              mark: { type: "line", point: true, strokeWidth: 2.5, color: "#8c564b" },
+              encoding: {
+                x: {
+                  field: "date",
+                  type: "temporal",
+                  axis: {
+                    title: "Year",
+                    format: "%Y"
+                  }
+                },
+                y: {
+                  field: "value",
+                  type: "quantitative",
+                  axis: {
+                    title: "% of employed people",
+                    format: ".0f"
+                  }
+                },
+                tooltip: [
+                  { field: "measure", type: "nominal", title: "Measure" },
+                  { field: "year", type: "quantitative", title: "Year" },
+                  { field: "value", type: "quantitative", title: "%", format: ".1f" },
+                  { field: "period", type: "nominal", title: "Period" }
+                ]
+              }
+            },
+            {
+              data: { values: mostOfTheTimeSeriesAfterGap },
+              mark: { type: "line", point: true, strokeWidth: 2.5, color: "#8c564b" },
+              encoding: {
+                x: {
+                  field: "date",
+                  type: "temporal",
+                  axis: {
+                    title: "Year",
+                    format: "%Y"
+                  }
+                },
+                y: {
+                  field: "value",
+                  type: "quantitative",
+                  axis: {
+                    title: "% of employed people",
+                    format: ".0f"
+                  }
+                },
+                tooltip: [
+                  { field: "measure", type: "nominal", title: "Measure" },
+                  { field: "year", type: "quantitative", title: "Year" },
+                  { field: "value", type: "quantitative", title: "%", format: ".1f" },
+                  { field: "period", type: "nominal", title: "Period" }
+                ]
+              }
+            }
+          ]
         };
 
         vegaEmbed("#vis-most", mostSpec);

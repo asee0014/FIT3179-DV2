@@ -21,7 +21,7 @@
     "x": {
       "field": "income_midpoint",
       "type": "quantitative",
-      "title": "PersonalIncome ($)",
+      "title": "Personal Income ($)",
       "scale": { "domain": [0, 350000] }
     },
     "y": {
