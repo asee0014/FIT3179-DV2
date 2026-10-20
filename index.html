@@ -79,6 +79,16 @@
       <div id="workplace-size-lollipop" class="chart-panel"></div>
     </div>
   </div>
+    <div class="pure-g">
+    <div class="pure-u-1-2 text-panel">
+      <h2>Regional vs CBD work from home</h2>
+      <p>This dumbbell chart compares the share of workers working from home in regional areas against the corresponding CBD capital city.</p>
+      <p>It makes the gap clear: CBDs consistently report much higher remote-work rates than the surrounding regions, suggesting a stronger shift toward hybrid work in dense urban office hubs.</p>
+    </div>
+    <div class="pure-u-1-2">
+      <div id="regional-cbd-wfh-dumbbell" class="chart-panel"></div>
+    </div>
+  </div>
 
   <script>
     fetch("wfh_long.json")
@@ -321,7 +331,16 @@
             console.error("Unable to load GCCSA choropleth spec:", error);
           });
 
-          fetch("charts/lockdown_map.vl.json")
+          fetch("charts/regional_cbd_wfh_dumbbell.vl.json")
+          .then((response) => response.json())
+          .then((spec) => {
+            vegaEmbed("#regional-cbd-wfh-dumbbell", spec);
+          })
+          .catch((error) => {
+            console.error("Unable to load regional vs CBD dumbbell spec:", error);
+          });
+
+        fetch("charts/lockdown_map.vl.json")
           .then((response) => response.json())
           .then((mapSpec) => {
             vegaEmbed("#lockdown-map", mapSpec);

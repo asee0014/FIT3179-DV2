@@ -1,0 +1,149 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Regional vs CBD work from home",
+    "fontSize": 18,
+    "anchor": "start",
+    "dx": 20,
+    "dy": -10
+  },
+  "width": 700,
+  "height": 420,
+  "layer": [
+    {
+      "data": {
+        "values": [
+          { "state": "Queensland", "regional_wfh": 40, "cbd_wfh": 52 },
+          { "state": "NSW", "regional_wfh": 39, "cbd_wfh": 70 },
+          { "state": "Victoria", "regional_wfh": 37, "cbd_wfh": 65 },
+          { "state": "Tasmania", "regional_wfh": 36, "cbd_wfh": 51 },
+          { "state": "NT", "regional_wfh": 34, "cbd_wfh": 42 },
+          { "state": "South Australia", "regional_wfh": 33, "cbd_wfh": 45 },
+          { "state": "Western Australia", "regional_wfh": 31, "cbd_wfh": 49 }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#6b7280",
+        "strokeWidth": 2,
+        "opacity": 0.8
+      },
+      "encoding": {
+        "x": { "field": "regional_wfh", "type": "quantitative" },
+        "x2": { "field": "cbd_wfh", "type": "quantitative" },
+        "y": {
+          "field": "state",
+          "type": "nominal",
+          "sort": ["Western Australia", "South Australia", "NT", "Tasmania", "Victoria", "NSW", "Queensland"],
+          "title": null
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          { "state": "Queensland", "value": 40 },
+          { "state": "NSW", "value": 39 },
+          { "state": "Victoria", "value": 37 },
+          { "state": "Tasmania", "value": 36 },
+          { "state": "NT", "value": 34 },
+          { "state": "South Australia", "value": 33 },
+          { "state": "Western Australia", "value": 31 }
+        ]
+      },
+      "transform": [
+        { "calculate": "'Regional'", "as": "series" }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 110,
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": { "field": "value", "type": "quantitative" },
+        "y": {
+          "field": "state",
+          "type": "nominal",
+          "sort": ["Western Australia", "South Australia", "NT", "Tasmania", "Victoria", "NSW", "Queensland"],
+          "title": null
+        },
+        "color": {
+          "field": "series",
+          "type": "nominal",
+          "title": "Location",
+          "scale": { "domain": ["Regional", "CBD"], "range": ["#4c78a8", "#e45756"] },
+          "legend": {
+            "orient": "top",
+            "direction": "horizontal",
+            "titleFontSize": 11,
+            "labelFontSize": 10,
+            "offset": 10
+          }
+        },
+        "tooltip": [
+          { "field": "state", "type": "nominal", "title": "Region" },
+          { "field": "value", "type": "quantitative", "title": "Regional WFH (%)", "format": ".0f" }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          { "state": "Queensland", "value": 52 },
+          { "state": "NSW", "value": 70 },
+          { "state": "Victoria", "value": 65 },
+          { "state": "Tasmania", "value": 51 },
+          { "state": "NT", "value": 42 },
+          { "state": "South Australia", "value": 45 },
+          { "state": "Western Australia", "value": 49 }
+        ]
+      },
+      "transform": [
+        { "calculate": "'CBD'", "as": "series" }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 110,
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": { "field": "value", "type": "quantitative" },
+        "y": {
+          "field": "state",
+          "type": "nominal",
+          "sort": ["Western Australia", "South Australia", "NT", "Tasmania", "Victoria", "NSW", "Queensland"],
+          "title": null
+        },
+        "color": {
+          "field": "series",
+          "type": "nominal",
+          "title": "Location",
+          "scale": { "domain": ["Regional", "CBD"], "range": ["#4c78a8", "#e45756"] },
+          "legend": null
+        },
+        "tooltip": [
+          { "field": "state", "type": "nominal", "title": "State" },
+          { "field": "value", "type": "quantitative", "title": "CBD WFH (%)", "format": ".0f" }
+        ]
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Work from home (%)",
+      "scale": { "domain": [0, 80] }
+    }
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 10,
+      "titleFontSize": 11
+    },
+    "legend": {
+      "labelFontSize": 10,
+      "titleFontSize": 11
+    }
+  }
+}
