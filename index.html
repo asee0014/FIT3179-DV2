@@ -264,8 +264,8 @@
                   }
                 },
                 x2: { field: "end", type: "temporal" },
-                y: { value: 0 },
-                y2: { value: 500 }
+                y: { datum: 0 },
+                y2: { datum: 60 }
               }
             },
             {
@@ -400,10 +400,17 @@
               data: { values: [{ start: "2008-11-01", end: "2020-09-01" }] },
               mark: { type: "rect", color: "#dddddd", opacity: 0.75 },
               encoding: {
-                x: { field: "start", type: "temporal", axis: null },
+                x: {
+                  field: "start",
+                  type: "temporal",
+                  axis: {
+                    title: "Year",
+                    format: "%Y"
+                  }
+                },
                 x2: { field: "end", type: "temporal" },
-                y: { value: 28 },
-                y2: { value: 392 }
+                y: { datum: 2.5 },
+                y2: { datum: 57.5 }
               }
             },
             {
