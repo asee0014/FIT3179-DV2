@@ -101,6 +101,49 @@
   </div>
 
   <script>
+    function resolveSpecUrls(spec) {
+      const baseDir = window.location.pathname.endsWith('/')
+        ? window.location.pathname
+        : `${window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1)}`;
+
+      const normalise = (value) => {
+        if (typeof value !== 'string') return value;
+        if (/^(https?:)?\/\//.test(value) || value.startsWith('data:') || value.startsWith('#')) {
+          return value;
+        }
+
+        const cleaned = value
+          .replace(/^\.\//, '')
+          .replace(/^(?:\.\.\/)+/, '');
+
+        return new URL(cleaned, `${window.location.origin}${baseDir}`).toString();
+      };
+
+      const walk = (node) => {
+        if (Array.isArray(node)) {
+          return node.map(walk);
+        }
+
+        if (!node || typeof node !== 'object') {
+          return node;
+        }
+
+        Object.keys(node).forEach((key) => {
+          const value = node[key];
+
+          if (key === 'url' && typeof value === 'string') {
+            node[key] = normalise(value);
+          } else if (value && typeof value === 'object') {
+            node[key] = walk(value);
+          }
+        });
+
+        return node;
+      };
+
+      return walk(spec);
+    }
+
     fetch("wfh_long.json")
       .then((response) => response.json())
       .then((data) => {
@@ -335,16 +378,16 @@
         fetch("charts/capital_cities_wfh_map.vl.json")
           .then((response) => response.json())
           .then((mapSpec) => {
-            vegaEmbed("#wfh-cities-map", mapSpec);
+            vegaEmbed("#wfh-cities-map", resolveSpecUrls(mapSpec));
           })
           .catch((error) => {
             console.error("Unable to load GCCSA choropleth spec:", error);
           });
 
-          fetch("charts/regional_cbd_wfh_dumbbell.vl.json")
+        fetch("charts/regional_cbd_wfh_dumbbell.vl.json")
           .then((response) => response.json())
           .then((spec) => {
-            vegaEmbed("#regional-cbd-wfh-dumbbell", spec);
+            vegaEmbed("#regional-cbd-wfh-dumbbell", resolveSpecUrls(spec));
           })
           .catch((error) => {
             console.error("Unable to load regional vs CBD dumbbell spec:", error);
@@ -353,7 +396,7 @@
         fetch("charts/lockdown_map.vl.json")
           .then((response) => response.json())
           .then((mapSpec) => {
-            vegaEmbed("#lockdown-map", mapSpec);
+            vegaEmbed("#lockdown-map", resolveSpecUrls(mapSpec));
           })
           .catch((error) => {
             console.error("Unable to load GCCSA choropleth spec:", error);
@@ -362,7 +405,7 @@
         fetch("charts/interstate_migration_arrow_map.vl.json")
           .then((response) => response.json())
           .then((mapSpec) => {
-            vegaEmbed("#migration-map", mapSpec);
+            vegaEmbed("#migration-map", resolveSpecUrls(mapSpec));
           })
           .catch((error) => {
             console.error("Unable to load migration arrow map spec:", error);
@@ -371,7 +414,7 @@
         fetch("charts/employment_type_bar.vl.json")
           .then((response) => response.json())
           .then((spec) => {
-            vegaEmbed("#employment-type-bar", spec);
+            vegaEmbed("#employment-type-bar", resolveSpecUrls(spec));
           })
           .catch((error) => {
             console.error("Unable to load employment type bar spec:", error);
@@ -380,7 +423,7 @@
         fetch("charts/personal_income_dot_plot.vl.json")
           .then((response) => response.json())
           .then((spec) => {
-            vegaEmbed("#income-dot-plot", spec);
+            vegaEmbed("#income-dot-plot", resolveSpecUrls(spec));
           })
           .catch((error) => {
             console.error("Unable to load personal income dot plot spec:", error);
@@ -389,7 +432,7 @@
         fetch("charts/workplace_size_lollipop.vl.json")
           .then((response) => response.json())
           .then((spec) => {
-            vegaEmbed("#workplace-size-lollipop", spec);
+            vegaEmbed("#workplace-size-lollipop", resolveSpecUrls(spec));
           })
           .catch((error) => {
             console.error("Unable to load workplace size lollipop spec:", error);
