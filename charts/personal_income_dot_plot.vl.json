@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 420,
+  "height": 420,
+  "title": {
+    "text": "WFH by personal income",
+    "fontSize": 18,
+    "anchor": "start",
+    "dx": 20,
+    "dy": -10
+  },
+  "data": { "url": "../data/roy-morgan/personal_income.json" },
+  "transform": [
+    { "filter": "datum.response == 'Work from home'" },
+    {
+      "calculate": "datum.income_max == null ? datum.income_min + 25000 : (datum.income_min + datum.income_max) / 2",
+      "as": "income_midpoint"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "income_midpoint",
+      "type": "quantitative",
+      "title": "PersonalIncome ($)",
+      "scale": { "domain": [0, 350000] }
+    },
+    "y": {
+      "field": "percent",
+      "type": "quantitative",
+      "title": "Work from home (%)",
+      "scale": { "domain": [0, 70] }
+    },
+    "color": { "value": "#4e79a7" }
+  },
+  "layer": [
+    {
+      "data": { "values": [{ "x": 74100, "y": 0 }, { "x": 74100, "y": 70 }] },
+      "mark": {
+        "type": "line",
+        "strokeDash": [6, 4],
+        "strokeWidth": 1.8
+      },
+      "encoding": {
+        "x": { "field": "x", "type": "quantitative" },
+        "y": { "field": "y", "type": "quantitative" },
+        "color": { "value": "#d97706" }
+      }
+    },
+    {
+      "data": { "values": [{ "label": "Median national income", "x": 74100, "y": 10 }] },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "dy": -8,
+        "fontSize": 10,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": { "field": "x", "type": "quantitative" },
+        "y": { "field": "y", "type": "quantitative" },
+        "text": { "field": "label", "type": "nominal" },
+        "color": { "value": "#d97706" }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 120,
+        "filled": true,
+        "stroke": "#4e79a7",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": { "field": "income_midpoint", "type": "quantitative" },
+        "y": { "field": "percent", "type": "quantitative" },
+        "tooltip": [
+          { "field": "income_band", "type": "nominal", "title": "Income band" },
+          { "field": "income_min", "type": "quantitative", "title": "Min", "format": "$,.0f" },
+          { "field": "income_max", "type": "quantitative", "title": "Max", "format": "$,.0f" },
+          { "field": "percent", "type": "quantitative", "title": "WFH %", "format": ".0f" }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 10,
+      "titleFontSize": 11
+    }
+  }
+}

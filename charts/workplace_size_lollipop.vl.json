@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 420,
+  "height": 420,
+  "title": {
+    "text": "WFH by workplace size",
+    "fontSize": 18,
+    "anchor": "start",
+    "dx": 20,
+    "dy": -10
+  },
+  "data": { "url": "../data/roy-morgan/workplace_size.json" },
+  "transform": [
+    { "filter": "datum.response == 'Work from home'" }
+  ],
+  "encoding": {
+    "y": {
+      "field": "workplace_size",
+      "type": "nominal",
+      "sort": { "field": "order", "order": "ascending" },
+      "title": null
+    },
+    "x": {
+      "field": "percent",
+      "type": "quantitative",
+      "title": "Work from home (%)",
+      "scale": { "domain": [0, 60] }
+    },
+    "color": { "value": "#2e7d32" }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "stroke": "#2e7d32",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": { "field": "percent", "type": "quantitative" },
+        "x2": { "datum": 0 },
+        "y": {
+          "field": "workplace_size",
+          "type": "nominal",
+          "sort": { "field": "order", "order": "ascending" }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 110,
+        "filled": true,
+        "stroke": "#2e7d32",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": { "field": "percent", "type": "quantitative" },
+        "y": {
+          "field": "workplace_size",
+          "type": "nominal",
+          "sort": { "field": "order", "order": "ascending" }
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 10,
+      "titleFontSize": 11
+    }
+  }
+}
