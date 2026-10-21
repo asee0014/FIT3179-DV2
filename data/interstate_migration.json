@@ -7,14 +7,14 @@
     "net": -20818
   },
   {
-    "state": "Vic",
+    "state": "VIC",
     "state_name": "Victoria",
     "arrivals": 75580,
     "departures": 75498,
     "net": 82
   },
   {
-    "state": "Qld",
+    "state": "QLD",
     "state_name": "Queensland",
     "arrivals": 98121,
     "departures": 83403,
@@ -35,7 +35,7 @@
     "net": 10314
   },
   {
-    "state": "Tas",
+    "state": "TAS",
     "state_name": "Tasmania",
     "arrivals": 14559,
     "departures": 14657,
