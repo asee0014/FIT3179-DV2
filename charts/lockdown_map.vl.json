@@ -2,12 +2,16 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 800,
     "height": 450,
-    "title": "Days spent in COVID lockdowns by state and territory",
+    "title": {
+        "text": "Days spent in COVID lockdowns by state and territory",
+        "fontSize": 18,
+        "anchor": "start",
+        "dy": -10
+    },
     "params": [
         {
             "name": "showCapitalWFH",
-            "value": true,
-            "bind": {"input": "checkbox", "name": "Show WFH layer "}
+            "value": true
         }
     ],
     "projection": {"type": "mercator"},

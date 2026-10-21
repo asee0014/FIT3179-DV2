@@ -11,124 +11,125 @@
 </head>
 <body>
   <main class="page-shell">
-    <header class="page-header">
-      <p class="eyebrow">Australia's work landscape</p>
-      <h1>Work from home in Australia</h1>
-      <p>Placeholder overview text for the story introduction. This section will frame the broader narrative around how remote work changed before, during, and after the pandemic.</p>
+    <header class="page-header column">
+      <div>
+        <h1>Remote Work in Australia</h1>
+        <p>Working from home (WFH) has become an integral part of daily life for many Australians. 36% of Australians worked from home in 2025. </p>
+        <br>
+        <p>In this page, we explore current WFH trends, examine the impact from the COVID-19 pandemic, and investigate demographic drivers of remote work. We also take a look at emerging trends including Return to Office mandates future trends with return to office mandates.</p>
+      </div>     
     </header>
 
     <section class="story-section">
-      <div class="section-header">
-        <h2>1. Regional and state variation</h2>
-        <p>Placeholder subsection copy explaining how geography shaped the remote-work response and policy environment.</p>
+      <div class="section-header column">
+        <div>
+          <h2>Current WFH Stats</h2>
+          <p>Australia's south east has the highest WFH rates. There are significantly higher WFH rates in capital cities compared to regional areas.</p>
+        </div>
       </div>
       <div class="section-grid">
         <article class="story-card">
-          <div class="text-panel">
-            <h3>Working from home</h3>
-            <p>This choropleth shows the share of people working from home across Greater Capital City Statistical Areas.</p>
-          </div>
           <div id="wfh-cities-map" class="chart-panel"></div>
+          <div class="text-panel">
+            <p>The highest WFH rates are found on the east coast of Australia.</p>
+          </div>
         </article>
         <article class="story-card">
-          <div class="text-panel">
-            <h3>Regional vs CBD work from home</h3>
-            <p>This dumbbell chart compares the share of workers working from home in regional areas against the corresponding CBD capital city.</p>
-          </div>
           <div id="regional-cbd-wfh-dumbbell" class="chart-panel"></div>
+          <div class="text-panel">
+            <p>CBD workers have higher WFH rates compared to their regional counterparts, with the largest gaps being in Victoria and New South Wales.</p>
+          </div>
         </article>
 
         <article class="story-card">
+          <div id="migration-map" class="chart-panel"></div>
           <div class="text-panel">
-            <h3>Net interstate migration</h3>
             <p>The flexibility of remote work has enabled many Sydney residents to relocate to Queensland seeking better housing affordability and climate.</p>
           </div>
-          <div id="migration-map" class="chart-panel"></div>
         </article>
       </div>
     </section>
 
      <section class="story-section">
-      <div class="section-header">
-        <h2>2. Work from home origins</h2>
-        <p>Placeholder subsection copy describing the broad trend in working from home over time and the post-2020 shift.</p>
+      <div class="section-header column">
+        <div>
+          <h2>Work from home origins</h2>
+          <p>The COVID-19 pandemic forced many Australian businesses to adopt remote work. After the pandemic these policies remain.</p>
+        </div>
       </div>
       <div class="section-grid">
         <article class="story-card">
-          <div class="text-panel">
-            <h3>Working from home over time</h3>
-            <p>This chart tracks the long-run share of employed people working from home, alongside the lower and upper estimate range observed during the COVID period.</p>
-          </div>
           <div id="vis" class="chart-panel"></div>
+          <div class="text-panel">
+            <p>WFH rates had already been trending upwards since the early 2000s. However, government mandated lockdowns during the COVID-19 pandemic caused a significant spike in remote work with upper estimates peaking at 55% of all employed Australians working from home. In the period after the pandemic, WFH rates cooled and settled at their natural rates around 36%.</p>
+          </div>
         </article>
         <article class="story-card">
-          <div class="text-panel">
-            <h3>Days spent in lockdown by state and territory</h3>
-            <p>This choropleth shows the number of lockdown days across each state and territory.</p>
-          </div>
           <div id="lockdown-map" class="chart-panel"></div>
+          <div class="text-panel">
+            <p>During the COVID-19 pandemic, state governments had authority over lockdown decisions. Victoria and New South Wales experienced the most days spend in lockdown out of the whole of country (Victoria 302 days, New South Wales 174 days). After the pandemic they retained the highest WFH rates as well.</p>
+          </div>
         </article>
       </div>
     </section>
 
     <section class="story-section">
-      <div class="section-header">
-        <h2>3. Workforce and demographic drivers</h2>
-        <p>Placeholder subsection copy covering how remote work differs across occupations, income levels and organisation size.</p>
+      <div class="section-header column">
+        <div>
+          <h2>Workforce and demographic drivers</h2>
+          <p>In this section we explore what factors influence the likelihood of working from home including employment type, income level, and company size.</p>
+        </div>
       </div>
       <div class="section-grid">
         <article class="story-card">
+          
+          <div id="employment-type-bar" class="chart-panel"></div>
           <div class="text-panel">
-            <h3>Work from home by employment type</h3>
             <p>This bar chart shows the share of workers who work from home by employment type.</p>
           </div>
-          <div id="employment-type-bar" class="chart-panel"></div>
         </article>
 
         <article class="story-card">
+          <div id="income-dot-plot" class="chart-panel"></div>
           <div class="text-panel">
-            <h3>Work from home by personal income</h3>
             <p>This dot plot shows the share of workers who work from home across personal income bands.</p>
           </div>
-          <div id="income-dot-plot" class="chart-panel"></div>
         </article>
 
         <article class="story-card">
+          <div id="workplace-size-lollipop" class="chart-panel"></div>
           <div class="text-panel">
-            <h3>Work from home by workplace size</h3>
             <p>This lollipop chart compares the share of workers who work from home by company size.</p>
           </div>
-          <div id="workplace-size-lollipop" class="chart-panel"></div>
         </article>
 
          <article class="story-card">
+          <div id="reasons-to-wfh-sex-bar" class="chart-panel"></div>
           <div class="text-panel">
-            <h3>Reasons for working from home by sex</h3>
             <p>This diverging horizontal bar chart compares the number of male and female employees working from home for each reason.</p>
           </div>
-          <div id="reasons-to-wfh-sex-bar" class="chart-panel"></div>
         </article>
       </div>
     </section>
     <section class="story-section">
-      <div class="section-header">
-        <h2>5. Future of remote work</h2>
-        <p>The proportion of employees who work from home most of the time has begun to decline. Office mandates are becoming increasingly common reflecting employers desire to get employees back into the office.</p>
+      <div class="section-header column">
+        <div>
+          <h2>Future of remote work</h2>
+          <p>The proportion of employees who work from home most of the time has begun to decline. Office mandates are becoming increasingly common reflecting employers desire to get employees back into the office.</p>
+        </div>
       </div>
       <div class="section-grid">
         <article class="story-card">
+          <div id="vis-most" class="chart-panel"></div>
           <div class="text-panel">
-            <h3>Most of the time</h3>
             <p>This chart isolates the "Most of the time" measure across the period in which it is available.</p>
           </div>
-          <div id="vis-most" class="chart-panel"></div>
         </article>
         <article class="story-card">
-          <div class="text-panel">
-            <h3>Office days required</h3>
+          <div id="office-days-required-bar" class="chart-panel"></div>
+           <div class="text-panel">
             <p>This grouped bar chart compares the share of workers who are required to attend the office by number of days per week in 2024 and 2025.</p>
           </div>
-          <div id="office-days-required-bar" class="chart-panel"></div>
         </article>
       </div>
     </section>

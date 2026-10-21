@@ -6,7 +6,6 @@
     "text": "WFH by workplace size",
     "fontSize": 18,
     "anchor": "start",
-    "dx": 20,
     "dy": -10
   },
   "data": { "url": "../data/roy-morgan/workplace_size.json" },

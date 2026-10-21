@@ -2,7 +2,12 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 800,
     "height": 450,
-    "title": "Working from home percentage by capital city",
+    "title": {
+        "text": "Working from home percentage by capital city",
+        "fontSize": 18,
+        "anchor": "start",
+        "dy": -10
+    },
     "projection": {"type": "mercator"},
     "layer": [
         {
@@ -29,7 +34,7 @@
                 "size": {
                     "field": "wfh_band",
                     "type": "nominal",
-                    "title": "wfh percent",
+                    "title": "WFH percent",
                     "sort": ["30-39", "40-49", "50+"],
                     "scale": {
                         "range": [120, 500, 1800]
