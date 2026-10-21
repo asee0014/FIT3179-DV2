@@ -611,7 +611,28 @@
         fetch("charts/lockdown_map.vl.json")
           .then((response) => response.json())
           .then((mapSpec) => {
-            vegaEmbed("#lockdown-map", makeResponsiveSpec(resolveSpecUrls(mapSpec)));
+            vegaEmbed("#lockdown-map", makeResponsiveSpec(resolveSpecUrls(mapSpec)))
+              .then((result) => {
+                const mapContainer = document.querySelector("#lockdown-map");
+                if (!mapContainer) return;
+
+                const toggle = document.createElement("label");
+                toggle.className = "lockdown-map-toggle";
+                toggle.innerHTML = '<input type="checkbox" checked> <span>WFH layer</span>';
+                mapContainer.appendChild(toggle);
+
+                const checkbox = toggle.querySelector("input");
+                const view = result.view;
+
+                checkbox.addEventListener("change", (event) => {
+                  view.signal("showCapitalWFH", event.target.checked).run();
+                });
+
+                view.signal("showCapitalWFH", checkbox.checked).run();
+              })
+              .catch((error) => {
+                console.error("Unable to render lockdown map:", error);
+              });
           })
           .catch((error) => {
             console.error("Unable to load GCCSA choropleth spec:", error);
