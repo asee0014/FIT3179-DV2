@@ -55,7 +55,13 @@
         "labelFontSize": 10,
         "offset": 10
       }
-    }
+    },
+    "tooltip": [
+      { "field": "reason", "type": "nominal", "title": "Reason" },
+      { "field": "sex", "type": "nominal", "title": "Sex" },
+      { "field": "employees_000", "type": "quantitative", "title": "Employees ('000)", "format": ".0f" },
+      { "field": "pct_of_sex", "type": "quantitative", "title": "% of sex", "format": ".1f" }
+    ]
   },
   "layer": [
     {

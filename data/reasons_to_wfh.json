@@ -7,13 +7,6 @@
   "rse_pct": 6.465
  },
  {
-  "reason": "Operates farm from home",
-  "sex": "Male",
-  "employees_000": 6.375,
-  "pct_of_sex": 0.4,
-  "rse_pct": 33.359
- },
- {
   "reason": "Childcare or family considerations or caring responsibilities",
   "sex": "Male",
   "employees_000": 108.676,
@@ -61,13 +54,6 @@
   "employees_000": 219.781,
   "pct_of_sex": 10.2,
   "rse_pct": 6.454
- },
- {
-  "reason": "Operates farm from home",
-  "sex": "Female",
-  "employees_000": 6.988,
-  "pct_of_sex": 0.3,
-  "rse_pct": 41.571
  },
  {
   "reason": "Childcare or family considerations or caring responsibilities",
