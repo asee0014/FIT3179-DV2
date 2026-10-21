@@ -110,6 +110,16 @@
       <div id="reasons-to-wfh-sex-bar" class="chart-panel"></div>
     </div>
   </div>
+  <div class="pure-g">
+    <div class="pure-u-1-2 text-panel">
+      <h2>Office days required</h2>
+      <p>This grouped bar chart compares the share of workers who are required to attend the office by number of days per week in 2024 and 2025.</p>
+      <p>The pattern shows that the most common requirement remains five days each week, while a larger share of workers in 2025 were expected to be in the office for four or five days.</p>
+    </div>
+    <div class="pure-u-1-2">
+      <div id="office-days-required-bar" class="chart-panel"></div>
+    </div>
+  </div>
 
   <script>
     function resolveSpecUrls(spec) {
@@ -500,6 +510,72 @@
         };
 
         vegaEmbed("#vis-most", makeResponsiveSpec(mostSpec));
+
+        fetch("data/office_days_required.json")
+          .then((response) => response.json())
+          .then((officeData) => {
+            const officeSpec = {
+              $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+              description: "Share of workers by number of office days required in 2024 and 2025.",
+              width: "container",
+              height: 420,
+              title: {
+                text: "Office days required",
+                fontSize: 18,
+                anchor: "start",
+                dx: 20,
+                dy: -10
+              },
+              data: { values: officeData },
+              mark: "bar",
+              encoding: {
+                x: {
+                  field: "days_required",
+                  type: "nominal",
+                  sort: { field: "days_order", order: "ascending" },
+                  axis: {
+                    title: "Office days required"
+                  }
+                },
+                y: {
+                  field: "pct",
+                  type: "quantitative",
+                  axis: {
+                    title: "% of workers",
+                    format: ".0f"
+                  }
+                },
+                color: {
+                  field: "year",
+                  type: "nominal",
+                  title: "Year",
+                  scale: {
+                    domain: ["2024", "2025"],
+                    range: ["#4E79A7", "#E15759"]
+                  },
+                  legend: {
+                    orient: "top",
+                    direction: "horizontal",
+                    titleAnchor: "start"
+                  }
+                },
+                xOffset: {
+                  field: "year",
+                  type: "nominal"
+                },
+                tooltip: [
+                  { field: "year", type: "nominal", title: "Year" },
+                  { field: "days_required", type: "nominal", title: "Days required" },
+                  { field: "pct", type: "quantitative", title: "% of workers", format: ".0f" }
+                ]
+              }
+            };
+
+            vegaEmbed("#office-days-required-bar", makeResponsiveSpec(officeSpec));
+          })
+          .catch((error) => {
+            console.error("Unable to load office days required spec:", error);
+          });
 
         fetch("charts/capital_cities_wfh_map.vl.json")
           .then((response) => response.json())

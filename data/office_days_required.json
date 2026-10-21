@@ -1,0 +1,74 @@
+[
+ {
+  "days_required": "No days required",
+  "days_order": 0,
+  "year": "2024",
+  "pct": 9
+ },
+ {
+  "days_required": "1 day",
+  "days_order": 1,
+  "year": "2024",
+  "pct": 4
+ },
+ {
+  "days_required": "2 days",
+  "days_order": 2,
+  "year": "2024",
+  "pct": 13
+ },
+ {
+  "days_required": "3 days",
+  "days_order": 3,
+  "year": "2024",
+  "pct": 19
+ },
+ {
+  "days_required": "4 days",
+  "days_order": 4,
+  "year": "2024",
+  "pct": 19
+ },
+ {
+  "days_required": "5 days",
+  "days_order": 5,
+  "year": "2024",
+  "pct": 36
+ },
+ {
+  "days_required": "No days required",
+  "days_order": 0,
+  "year": "2025",
+  "pct": 7
+ },
+ {
+  "days_required": "1 day",
+  "days_order": 1,
+  "year": "2025",
+  "pct": 4
+ },
+ {
+  "days_required": "2 days",
+  "days_order": 2,
+  "year": "2025",
+  "pct": 8
+ },
+ {
+  "days_required": "3 days",
+  "days_order": 3,
+  "year": "2025",
+  "pct": 20
+ },
+ {
+  "days_required": "4 days",
+  "days_order": 4,
+  "year": "2025",
+  "pct": 22
+ },
+ {
+  "days_required": "5 days",
+  "days_order": 5,
+  "year": "2025",
+  "pct": 39
+ }
+]
