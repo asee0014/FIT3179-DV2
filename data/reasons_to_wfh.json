@@ -1,0 +1,114 @@
+[
+ {
+  "reason": "Operates business from home or Home-based job",
+  "sex": "Male",
+  "employees_000": 165.806,
+  "pct_of_sex": 9.5,
+  "rse_pct": 6.465
+ },
+ {
+  "reason": "Operates farm from home",
+  "sex": "Male",
+  "employees_000": 6.375,
+  "pct_of_sex": 0.4,
+  "rse_pct": 33.359
+ },
+ {
+  "reason": "Childcare or family considerations or caring responsibilities",
+  "sex": "Male",
+  "employees_000": 108.676,
+  "pct_of_sex": 6.2,
+  "rse_pct": 7.454
+ },
+ {
+  "reason": "To catch up on work after hours",
+  "sex": "Male",
+  "employees_000": 371.159,
+  "pct_of_sex": 21.2,
+  "rse_pct": 4.023
+ },
+ {
+  "reason": "Less time spent travelling or commuting or save money",
+  "sex": "Male",
+  "employees_000": 286.759,
+  "pct_of_sex": 16.4,
+  "rse_pct": 4.882
+ },
+ {
+  "reason": "To work more flexibly or choose own hours",
+  "sex": "Male",
+  "employees_000": 511.861,
+  "pct_of_sex": 29.3,
+  "rse_pct": 4.617
+ },
+ {
+  "reason": "Health reasons or manage injury, illness or long-term health condition",
+  "sex": "Male",
+  "employees_000": 15.137,
+  "pct_of_sex": 0.9,
+  "rse_pct": 29.801
+ },
+ {
+  "reason": "Fewer distractions or prefers to work with less social interaction",
+  "sex": "Male",
+  "employees_000": 124.136,
+  "pct_of_sex": 7.1,
+  "rse_pct": 7.512
+ },
+ {
+  "reason": "Operates business from home or Home-based job",
+  "sex": "Female",
+  "employees_000": 219.781,
+  "pct_of_sex": 10.2,
+  "rse_pct": 6.454
+ },
+ {
+  "reason": "Operates farm from home",
+  "sex": "Female",
+  "employees_000": 6.988,
+  "pct_of_sex": 0.3,
+  "rse_pct": 41.571
+ },
+ {
+  "reason": "Childcare or family considerations or caring responsibilities",
+  "sex": "Female",
+  "employees_000": 195.999,
+  "pct_of_sex": 9.1,
+  "rse_pct": 6.073
+ },
+ {
+  "reason": "To catch up on work after hours",
+  "sex": "Female",
+  "employees_000": 476.733,
+  "pct_of_sex": 22.2,
+  "rse_pct": 2.798
+ },
+ {
+  "reason": "Less time spent travelling or commuting or save money",
+  "sex": "Female",
+  "employees_000": 334.87,
+  "pct_of_sex": 15.6,
+  "rse_pct": 4.652
+ },
+ {
+  "reason": "To work more flexibly or choose own hours",
+  "sex": "Female",
+  "employees_000": 537.614,
+  "pct_of_sex": 25.1,
+  "rse_pct": 3.47
+ },
+ {
+  "reason": "Health reasons or manage injury, illness or long-term health condition",
+  "sex": "Female",
+  "employees_000": 38.754,
+  "pct_of_sex": 1.8,
+  "rse_pct": 18.998
+ },
+ {
+  "reason": "Fewer distractions or prefers to work with less social interaction",
+  "sex": "Female",
+  "employees_000": 146.192,
+  "pct_of_sex": 6.8,
+  "rse_pct": 6.66
+ }
+]

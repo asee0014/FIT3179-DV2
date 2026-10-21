@@ -5,3 +5,5 @@ lockdown_data.json: https://www.researchgate.net/publication/397597567_Lockdown_
 Roy Morgan data: https://roymorgan-cms-prod.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2025/08/12064534/9981-Work-From-Home-June-2025.pdf
 
 interstate_migration data: ABS https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/latest-release#states-and-territories
+
+reasons_to_wfh data: https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/working-arrangements/latest-release#working-from-home

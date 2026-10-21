@@ -100,6 +100,16 @@
       <div id="regional-cbd-wfh-dumbbell" class="chart-panel"></div>
     </div>
   </div>
+  <div class="pure-g">
+    <div class="pure-u-1-2 text-panel">
+      <h2>Reasons for working from home by sex</h2>
+      <p>This diverging horizontal bar chart compares the number of male and female employees working from home for each reason.</p>
+      <p>It highlights where the patterns are most similar and where the gender gap is strongest, such as flexibility and caring responsibilities.</p>
+    </div>
+    <div class="pure-u-1-2">
+      <div id="reasons-to-wfh-sex-bar" class="chart-panel"></div>
+    </div>
+  </div>
 
   <script>
     function resolveSpecUrls(spec) {
@@ -552,6 +562,15 @@
           })
           .catch((error) => {
             console.error("Unable to load workplace size lollipop spec:", error);
+          });
+
+        fetch("charts/reasons_to_wfh_diverging_bar.vl.json")
+          .then((response) => response.json())
+          .then((spec) => {
+            vegaEmbed("#reasons-to-wfh-sex-bar", makeResponsiveSpec(resolveSpecUrls(spec)));
+          })
+          .catch((error) => {
+            console.error("Unable to load reasons to WFH diverging bar spec:", error);
           });
       })
       .catch((error) => {

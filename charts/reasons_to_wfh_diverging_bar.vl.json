@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Main reason for working from home",
+    "fontSize": 18,
+    "anchor": "start",
+    "dx": 20,
+    "dy": -10
+  },
+  "width": 560,
+  "height": 430,
+  "data": { "url": "../data/reasons_to_wfh.json" },
+  "transform": [
+    {
+      "calculate": "datum.sex == 'Male' ? -datum.employees_000 : datum.employees_000",
+      "as": "employees_000_signed"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "reason",
+      "type": "nominal",
+      "sort": { "op": "sum", "field": "employees_000", "order": "descending" },
+      "axis": {
+        "labelLimit": 260,
+        "labelFontSize": 10,
+        "title": null
+      }
+    },
+    "x": {
+      "field": "employees_000_signed",
+      "type": "quantitative",
+      "title": "Employees ('000)",
+      "scale": { "domain": [-600, 600] },
+      "axis": {
+        "titleFontSize": 11,
+        "labelFontSize": 10,
+        "tickCount": 7,
+        "labelExpr": "abs(datum.value)",
+        "format": ".0f"
+      }
+    },
+    "color": {
+      "field": "sex",
+      "type": "nominal",
+      "title": "Sex",
+      "scale": {
+        "domain": ["Male", "Female"],
+        "range": ["#4c78a8", "#f58518"]
+      },
+      "legend": {
+        "orient": "top",
+        "direction": "horizontal",
+        "titleFontSize": 11,
+        "labelFontSize": 10,
+        "offset": 10
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "height": 16,
+        "cornerRadius": 5
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 10,
+      "titleFontSize": 11
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}
