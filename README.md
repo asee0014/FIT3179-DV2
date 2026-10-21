@@ -7,3 +7,5 @@ Roy Morgan data: https://roymorgan-cms-prod.s3.ap-southeast-2.amazonaws.com/wp-c
 interstate_migration data: ABS https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/latest-release#states-and-territories
 
 reasons_to_wfh data: https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/working-arrangements/latest-release#working-from-home
+
+office_days_required.json : https://www.roberthalf.com/au/en/about/press/more-employers-mandate-5-days-as-they-follow-other-businesses
