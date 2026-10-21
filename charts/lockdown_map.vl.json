@@ -3,6 +3,13 @@
     "width": 800,
     "height": 450,
     "title": "Days spent in COVID lockdowns by state and territory",
+    "params": [
+        {
+            "name": "showCapitalWFH",
+            "value": true,
+            "bind": {"input": "checkbox", "name": "Show WFH layer "}
+        }
+    ],
     "projection": {"type": "mercator"},
     "layer": [
         {
@@ -41,6 +48,36 @@
                     {"field": "lockdowns", "title": "Lockdowns", "type": "quantitative"}
                 ]
             }
+        },
+        {
+            "data": {
+                "url": "./data/roy-morgan/capital_cities_wfh.json"
+            },
+            "transform": [
+                {"filter": {"param": "showCapitalWFH"}},
+                {
+                    "calculate": "if(datum.percent < 40, '30-39', if(datum.percent < 50, '40-49', '50+'))",
+                    "as": "wfh_band"
+                }
+            ],
+            "mark": {"type": "circle", "tooltip": {"content": "data"}},
+            "encoding": {
+                "longitude": {"field": "longitude", "type": "quantitative"},
+                "latitude": {"field": "latitude", "type": "quantitative"},
+                "size": {
+                    "field": "wfh_band",
+                    "title": "WFH percent",
+                    "type": "nominal",
+                    "sort": ["30-39", "40-49", "50+"],
+                    "scale": {
+                        "range": [120, 500, 1800]
+                    },
+                    "legend": {
+                       "title": { "signal": "showCapitalWFH ? 'WFH percent' : null"}
+                }
+            }
         }
+        }
+
     ]
 }
