@@ -96,7 +96,7 @@ body {
 .text-panel {
   padding: 20px 20px 12px;
   line-height: 1.6;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid transparent;
 }
 
 .text-panel h3 {
