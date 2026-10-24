@@ -3,7 +3,7 @@
   "width": 420,
   "height": 420,
   "title": {
-    "text": "WFH by personal income",
+    "text": "WFH rate by personal income",
     "fontSize": 18,
     "anchor": "start",
     "dy": -10
@@ -26,7 +26,7 @@
     "y": {
       "field": "percent",
       "type": "quantitative",
-      "title": "Work from home (%)",
+      "title": "WFH rate (%)",
       "scale": { "domain": [0, 70] }
     },
     "color": { "value": "#4e79a7" }
@@ -46,7 +46,7 @@
       }
     },
     {
-      "data": { "values": [{ "label": "Median national income", "x": 74100, "y": 10 }] },
+      "data": { "values": [{ "label": "Median national income ($74,100)", "x": 74100, "y": 10 }] },
       "mark": {
         "type": "text",
         "align": "left",

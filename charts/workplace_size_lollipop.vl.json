@@ -3,7 +3,7 @@
   "width": 420,
   "height": 420,
   "title": {
-    "text": "WFH by workplace size",
+    "text": "WFH rate by workplace size",
     "fontSize": 18,
     "anchor": "start",
     "dy": -10
@@ -22,7 +22,7 @@
     "x": {
       "field": "percent",
       "type": "quantitative",
-      "title": "Work from home (%)",
+      "title": "WFH rate (%)",
       "scale": { "domain": [0, 60] }
     },
     "color": { "value": "#54a24b" }

@@ -3,7 +3,7 @@
     "width": 800,
     "height": 450,
     "title": {
-        "text": "Days spent in COVID lockdowns by state and territory",
+        "text": "Total days spent in COVID lockdowns by state and territory",
         "fontSize": 18,
         "anchor": "start",
         "dy": -10
@@ -43,7 +43,7 @@
                 "color": {
                     "field": "lockdown_days",
                     "type": "quantitative",
-                    "title": "Lockdown days",
+                    "title": "Days in lockdown",
                     "scale": {"scheme": "yelloworangered"}
                 },
                 "tooltip": [

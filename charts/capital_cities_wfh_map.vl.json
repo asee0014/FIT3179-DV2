@@ -3,7 +3,7 @@
     "width": 800,
     "height": 450,
     "title": {
-        "text": "Working from home percentage by capital city",
+        "text": "Capital city WFH rates",
         "fontSize": 18,
         "anchor": "start",
         "dy": -10
@@ -27,7 +27,7 @@
                     "as": "wfh_band"
                 }
             ],
-            "mark": {"type": "circle", "tooltip": {"content": "data"}},
+            "mark": {"type": "circle"},
             "encoding": {
                 "longitude": {"field": "longitude", "type": "quantitative"},
                 "latitude": {"field": "latitude", "type": "quantitative"},
@@ -40,7 +40,10 @@
                         "range": [120, 500, 1800]
                     },
                     "legend": {}
-                }
+                },
+                "tooltip": [
+                { "field": "location", "title": "City", "type": "nominal" },
+                { "field": "percent", "title": "WFH percent", "type": "quantitative" }]
             }
         }
     ]

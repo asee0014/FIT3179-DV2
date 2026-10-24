@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Work from home by employment type",
+    "text": "WFH rate by employment type",
     "fontSize": 18,
     "anchor": "start",
     "dy": -10
@@ -26,7 +26,7 @@
     "y": {
       "field": "percent",
       "type": "quantitative",
-      "title": "Work from home (%)",
+      "title": "WFH rate (%)",
       "scale": { "domain": [0, 60] }
     },
     "color": {

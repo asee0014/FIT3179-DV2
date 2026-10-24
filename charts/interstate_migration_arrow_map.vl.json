@@ -3,7 +3,7 @@
   "width": 800,
   "height": 450,
   "title": {
-    "text": "Net interstate migration by state",
+    "text": "Net interstate migration",
     "fontSize": 18,
     "anchor": "start",
     "dy": -10
