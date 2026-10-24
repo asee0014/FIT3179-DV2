@@ -7,7 +7,7 @@
   "rse_pct": 6.465
  },
  {
-  "reason": "Childcare or family considerations or caring responsibilities",
+  "reason": "Childcare, family considerations or caring responsibilities",
   "sex": "Male",
   "employees_000": 108.676,
   "pct_of_sex": 6.2,
@@ -35,14 +35,14 @@
   "rse_pct": 4.617
  },
  {
-  "reason": "Health reasons or manage injury, illness or long-term health condition",
+  "reason": "Health reasons, manage injury or illness",
   "sex": "Male",
   "employees_000": 15.137,
   "pct_of_sex": 0.9,
   "rse_pct": 29.801
  },
  {
-  "reason": "Fewer distractions or prefers to work with less social interaction",
+  "reason": "Fewer distractions, work with less social interaction",
   "sex": "Male",
   "employees_000": 124.136,
   "pct_of_sex": 7.1,
@@ -56,7 +56,7 @@
   "rse_pct": 6.454
  },
  {
-  "reason": "Childcare or family considerations or caring responsibilities",
+  "reason": "Childcare, family considerations or caring responsibilities",
   "sex": "Female",
   "employees_000": 195.999,
   "pct_of_sex": 9.1,
@@ -84,14 +84,14 @@
   "rse_pct": 3.47
  },
  {
-  "reason": "Health reasons or manage injury, illness or long-term health condition",
+  "reason": "Health reasons, manage injury or illness",
   "sex": "Female",
   "employees_000": 38.754,
   "pct_of_sex": 1.8,
   "rse_pct": 18.998
  },
  {
-  "reason": "Fewer distractions or prefers to work with less social interaction",
+  "reason": "Fewer distractions, work with less social interaction",
   "sex": "Female",
   "employees_000": 146.192,
   "pct_of_sex": 6.8,

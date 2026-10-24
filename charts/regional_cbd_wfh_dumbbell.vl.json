@@ -55,6 +55,7 @@
       ],
       "mark": {
         "type": "circle",
+        "opacity": 1,
         "size": 110,
         "strokeWidth": 1.5
       },
@@ -102,6 +103,7 @@
       ],
       "mark": {
         "type": "circle",
+        "opacity": 1,
         "size": 110,
         "strokeWidth": 1.5
       },
