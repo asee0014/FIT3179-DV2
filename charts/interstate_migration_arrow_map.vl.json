@@ -34,7 +34,7 @@
       ],
       "mark": { "type": "geoshape", "stroke": "white", "strokeWidth": 1 },
       "encoding": {
-        "color": { "value": "#f1f1f1" }
+        "color": { "value": "#dddddd" }
       }
     },
     {
@@ -91,7 +91,7 @@
           },
           "scale": {
             "domain": ["Positive net migration", "Negative net migration"],
-            "range": ["#2e7d32", "#c62828"]
+            "range": ["#54a24b", "#e45756"]
           }
         },
         "tooltip": [

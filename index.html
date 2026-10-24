@@ -246,7 +246,7 @@
           data: { values: pair },
           mark: {
             type: "line",
-            stroke: pair.some((d) => d.measure === "Lower estimate") ? "#2ca02c" : "#d62728",
+            stroke: pair.some((d) => d.measure === "Lower estimate") ? "#54a24b" : "#e45756",
             strokeWidth: 2.5,
             opacity: 0.9,
             strokeDash: [8, 6]
@@ -321,7 +321,7 @@
             },
             {
               data: { values: blueSeriesBefore },
-              mark: { type: "line", point: true, strokeWidth: 2.5, color: "#1f77b4" },
+              mark: { type: "line", point: true, strokeWidth: 2.5, color: "#4c78a8" },
               encoding: {
                 x: {
                   field: "date",
@@ -349,7 +349,7 @@
             },
             {
               data: { values: blueSeriesAfter },
-              mark: { type: "line", point: true, strokeWidth: 2.5, color: "#1f77b4" },
+              mark: { type: "line", point: true, strokeWidth: 2.5, color: "#4c78a8" },
               encoding: {
                 x: {
                   field: "date",
@@ -401,7 +401,7 @@
                   title: "Measure",
                   scale: {
                     domain: ["Lower estimate", "Upper estimate"],
-                    range: ["#2ca02c", "#d62728"]
+                    range: ["#54a24b", "#e45756"]
                   },
                   legend: { orient: "top", direction: "horizontal", columns: 2 }
                 },
@@ -460,13 +460,13 @@
               },
               encoding: {
                 x: { field: "x", type: "temporal" },
-                y: { value: 210 },
+                y: { value: 175 },
                 text: { field: "label", type: "nominal" }
               }
             },
             {
               data: { values: mostOfTheTimeSeriesBeforeGap },
-              mark: { type: "line", point: {"color": "#8c564b"}, strokeWidth: 2.5, color: "#8c564b" },
+              mark: { type: "line", point: {"color": "#e45756"}, strokeWidth: 2.5, color: "#e45756" },
               encoding: {
                 x: {
                   field: "date",
@@ -494,7 +494,7 @@
             },
             {
               data: { values: mostOfTheTimeSeriesAfterGap },
-              mark: { type: "line", point: {"color": "#8c564b"}, strokeWidth: 2.5, color: "#8c564b" },
+              mark: { type: "line", point: {"color": "#e45756"}, strokeWidth: 2.5, color: "#e45756" },
               encoding: {
                 x: {
                   field: "date",
@@ -565,7 +565,7 @@
                   title: "Year",
                   scale: {
                     domain: ["2024", "2025"],
-                    range: ["#4E79A7", "#E15759"]
+                    range: ["#4E79A7", "#e45756"]
                   },
                   legend: {
                     orient: "top",

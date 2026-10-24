@@ -35,7 +35,7 @@
       "title": "Employment type",
       "scale": {
         "domain": ["Self-employed", "Public service", "Private industry"],
-        "range": ["#4c78a8", "#f58518", "#54a24b"]
+        "range": ["#4c78a8", "#e45756", "#54a24b"]
       },
       "legend": {
         "orient": "top",

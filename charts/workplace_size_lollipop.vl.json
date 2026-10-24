@@ -25,13 +25,13 @@
       "title": "Work from home (%)",
       "scale": { "domain": [0, 60] }
     },
-    "color": { "value": "#2e7d32" }
+    "color": { "value": "#54a24b" }
   },
   "layer": [
     {
       "mark": {
         "type": "rule",
-        "stroke": "#2e7d32",
+        "stroke": "#54a24b",
         "strokeWidth": 2
       },
       "encoding": {
@@ -47,9 +47,9 @@
     {
       "mark": {
         "type": "circle",
-        "size": 110,
-        "filled": true,
-        "stroke": "#2e7d32",
+        "size": 150,
+        "stroke": "#54a24b",
+        "opacity": 1,
         "strokeWidth": 1.5
       },
       "encoding": {
